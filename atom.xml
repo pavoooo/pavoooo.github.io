@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pavoooo.com/"/>
-  <updated>2017-08-13T14:10:50.000Z</updated>
+  <updated>2017-08-13T14:16:49.000Z</updated>
   <id>http://pavoooo.com/</id>
   
   <author>
@@ -14,6 +14,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vim你 should know</title>
+    <link href="http://pavoooo.com/2017/08/13/vim%E4%BD%A0-should-know/"/>
+    <id>http://pavoooo.com/2017/08/13/vim你-should-know/</id>
+    <published>2017-08-13T14:16:49.000Z</published>
+    <updated>2017-08-13T14:16:49.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>webpack性能优化</title>
