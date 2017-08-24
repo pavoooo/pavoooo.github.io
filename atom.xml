@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pavoooo.com/"/>
-  <updated>2017-08-13T14:16:49.000Z</updated>
+  <updated>2017-08-24T17:21:13.000Z</updated>
   <id>http://pavoooo.com/</id>
   
   <author>
@@ -20,9 +20,115 @@
     <link href="http://pavoooo.com/2017/08/13/vim%E4%BD%A0-should-know/"/>
     <id>http://pavoooo.com/2017/08/13/vim你-should-know/</id>
     <published>2017-08-13T14:16:49.000Z</published>
-    <updated>2017-08-13T14:16:49.000Z</updated>
+    <updated>2017-08-24T17:21:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>前阶段<code>stackoverflow</code>官方爆出“拯救人最多的问题是什么？”，让人深感意外的答案是“怎么退出vim编辑器”。很多人听了不禁一笑，但同时也反映出<code>vim</code>的使用之广泛。为了不再让小伙伴有上面这种烦恼，下面就简简单单的介绍一下<code>vim</code>这个神奇玩意，我们应该怎么玩。</p>
+<h3 id="什么是vim"><a href="#什么是vim" class="headerlink" title="什么是vim?"></a>什么是<code>vim</code>?</h3><p>相信很多人不止听说过<code>vim</code>，还听说过它的一个孪生兄弟<code>vi</code>。的确，在很多的情况下，我们可以将其视为同一个东西，也可以认为<code>vim</code>是<code>vi</code>的升级版本。那到底什么是<code>vim</code>呢？简单的说，<code>vim</code>就是<code>linux</code>系统内置的一个文本编辑器，不仅具有程序编辑的能力，还可以高亮显示关键字体。所以我们也可以称其为’程序编辑器’，在服务器领域，应用颇为广泛。</p>
+<h3 id="三种模式"><a href="#三种模式" class="headerlink" title="三种模式"></a>三种模式</h3><p><code>vim</code>有常见的三种模式：</p>
+<ul>
+<li><p><code>一般模式</code>：这个是默认的模式，当我们通过<code>vim</code>命令打开一个文件的时候，就进入了这个模式。在这个模式下，我们可以通过键盘来移动光标，删除字符和行，也可以复制、粘贴我们的数据。</p>
+</li>
+<li><p><code>编辑模式</code>：在一般模式下，我们是无法编辑文件的内容的。所以，为了进行文件内容的编辑，我们需要进入编辑模式。在一般模式下，我们可以按下<code>i</code>,<code>I</code>,<code>o</code>,<code>O</code>,<code>a</code>,<code>A</code>等任一字符进入到编辑模式。</p>
+</li>
+<li><p><code>命令行模式</code>：这个模式同样是在一般模式下使用的，通过按下<code>:</code>,<code>/</code>,<code>?</code>等任一个字符就可以进入命令行模式，在这个模式下，我们可以进行文件的查找、替换、退出<code>vim</code>等一系列的操作。</p>
+</li>
+</ul>
+<h3 id="一个常见的编辑流程"><a href="#一个常见的编辑流程" class="headerlink" title="一个常见的编辑流程"></a>一个常见的编辑流程</h3><ul>
+<li><p>通过<code>vim</code>打开一个文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim vim.txt</div></pre></td></tr></table></figure>
+</li>
+<li><p>按下<code>i</code>进入编辑模式，输入内容。</p>
+</li>
+<li>按下<code>[Esc]</code>退出编辑模式。</li>
+<li>输入<code>:wq</code>，按下回车，保存退出文件。</li>
+</ul>
+<h3 id="常用命令和按键组合"><a href="#常用命令和按键组合" class="headerlink" title="常用命令和按键组合"></a>常用命令和按键组合</h3><p><strong>1. 移动光标</strong></p>
+<ul>
+<li><code>h或左箭头</code>：向左移动一个字符</li>
+<li><code>l或右箭头</code>：向右移动一个字符</li>
+<li><code>j或下箭头</code>：向下移动一个字符</li>
+<li><code>k或上箭头</code>：向上移动一个字符<blockquote>
+<p>除了移动一个字符，我们也可以喝数字配合移动多个字符。如10j，表示的是向下移动10行。</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>2. 翻页组合键</strong></p>
+<ul>
+<li><code>Ctrl+f</code>：屏幕向下移动一页</li>
+<li><code>Ctrl+b</code>：屏幕向上移动一页</li>
+<li><code>Ctrl+d</code>：屏幕向下移动半页</li>
+<li><code>Ctrl+u</code>：屏幕向上移动半页</li>
+</ul>
+<p><strong>3. 位置移动</strong></p>
+<ul>
+<li><code>+</code>：光标移动到非空格符的下一行</li>
+<li><code>-</code>：光标移动到非空格符的上一行</li>
+<li><code>n&lt;space&gt;</code>：光标在同一行向右移动n个字符</li>
+<li><code>0</code>：移动到行首</li>
+<li><code>$</code>：移动到行尾</li>
+<li><code>H</code>：移动到屏幕最上方行首</li>
+<li><code>M</code>：移动到屏幕最中央行首</li>
+<li><code>L</code>：移动到最下方行首</li>
+<li><code>G</code>：移动到文件最后一行</li>
+<li><code>nG</code>：移动到文件的第n行</li>
+<li><code>gg</code>：移动到文件行首</li>
+<li><code>n&lt;enter&gt;</code>：文件向下移动n行</li>
+</ul>
+<p><strong>4. 查找和替换</strong></p>
+<ul>
+<li><code>/word</code>：向下查找值为<code>word</code>的字符</li>
+<li><code>?word</code>：向上查找值为<code>word</code>的字符</li>
+<li><code>n</code>：在查找模式下，沿着相同的方向寻找下一个所查找的字符</li>
+<li><code>N</code>：在查找模式下，沿着相反的方向寻找下一个所查找的字符</li>
+<li><code>:n1,n2s/word1/word2/g</code>：将第<code>n1</code>和第<code>n2</code>行的<code>word1</code>替换成<code>word2</code>。<code>g</code> 表示的是全部替换。<code>n2</code>为<code>$</code>的时候，表示的是最后一行。</li>
+</ul>
+<p><strong>5. 删除、复制、粘贴</strong></p>
+<ul>
+<li><code>x/X</code>：<code>x</code> 表示向后删除一个字符，<code>X</code>表示向前删除一个字符。</li>
+<li><code>nx</code>：表示向后删除<code>n</code>个字符</li>
+<li><code>dd</code>：删除光标所在的那一行</li>
+<li><code>ndd</code>：删除光标所在及下面的<code>n</code>行</li>
+<li><code>d1G</code> ：删除从光标所在行到第一行的所有的数据</li>
+<li><code>dG</code>：删除光标所在行到最后一行的数据</li>
+<li><code>d$</code>：删除光标所在处到行尾的所有字符</li>
+<li><code>d0</code>：删除光标所在处到行首的所有字符</li>
+<li><code>yy</code>：复制光标所在行</li>
+<li><code>nyy</code>：复制光标所在行及下面的<code>n</code>行</li>
+<li><code>y1G</code> ：复制光标所在行到第一行的所有数据</li>
+<li><code>yG</code>：复制光标所在行到最后一行的数据</li>
+<li><code>y0</code>：复制光标所在行到行首的数据</li>
+<li><code>y$</code>：复制光标所在行到行尾的数据</li>
+<li><code>p/P</code>：分别表示在光标所在行的下方和上方粘贴复制的数据</li>
+<li><code>J</code>：合并光标所在行和下一行的数据</li>
+<li><code>u</code>：撤销操作</li>
+</ul>
+<p><strong>6. 进入插入模式</strong></p>
+<ul>
+<li><code>i/I</code>：<code>i</code>表示从光标所在处插入，<code>I</code>表示从光标所在行的第一个非空格字符插入</li>
+<li><code>a/A</code>：<code>a</code>表示从光标的下一个字符开始插入，<code>A</code>表示从光标所在行的最后一个字符开始插入。</li>
+<li><code>o/O</code>：<code>o</code>在光标所在行的下方插入一个新行，<code>O</code>在光标所在行的上方插入一个新行。</li>
+<li><code>r/R</code>：<code>r</code>替换光标所在处的字符，<code>R</code>一直替换光标所在处的字符。</li>
+</ul>
+<p><strong>7. 保存、退出</strong></p>
+<ul>
+<li><code>:w</code>：保存</li>
+<li><code>:w!</code>：强制保存</li>
+<li><code>:q</code>：退出</li>
+<li><code>:q!</code>：强制退出</li>
+<li><code>:wq</code>：保存并退出</li>
+<li><code>:w[filename]</code>：另存为<code>filename</code></li>
+<li><code>:r[filename]</code>：读取<code>filename</code> 文件的内容</li>
+<li><code>:n1,n2 w [filename]</code>：将第n1和第n2行的内容另存为<code>filename</code></li>
+<li><code>:![command]</code>：执行<code>command</code></li>
+<li><code>:set nu</code>：显示行号</li>
+<li><code>:set nonu</code>：取消行号</li>
+</ul>
+<p>上面就是对<code>vim</code>编辑器的一个简单介绍，列出了许多命令，熟练掌握这些命令后，就会感觉到<code>vim</code> 你。。。慢慢飞，小心带刺的玫瑰。</p>
+]]></content>
     
     <summary type="html">
+    
+      &lt;p&gt;前阶段&lt;code&gt;stackoverflow&lt;/code&gt;官方爆出“拯救人最多的问题是什么？”，让人深感意外的答案是“怎么退出vim编辑器”。很多人听了不禁一笑，但同时也反映出&lt;code&gt;vim&lt;/code&gt;的使用之广泛。为了不再让小伙伴有上面这种烦恼，下面就简简单单的介绍
     
     </summary>
     
@@ -34,7 +140,7 @@
     <link href="http://pavoooo.com/2017/08/12/webpack%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     <id>http://pavoooo.com/2017/08/12/webpack性能优化/</id>
     <published>2017-08-12T07:20:49.000Z</published>
-    <updated>2017-08-13T14:10:50.000Z</updated>
+    <updated>2017-08-13T14:33:25.000Z</updated>
     
     <content type="html"><![CDATA[<p><code>webpack</code>是当下前端界中最著名的一个模块加载工具，<code>react</code>和<code>vue</code>也都是用其作为项目的开发工具之一。小组最近在二次开发一个开源项目，前端主要使用的技术栈试<code>react+redux+es6</code>。构建工具则采用的是<code>webpack</code>。起初整个项目的<code>2707 modules</code>打包花费时长大概有<code>112s</code>，经过对一番折腾，使整个打包编译时间降到<code>40s</code>左右。</p>
 <p>下面是整个项目的<code>webpack.config.js</code>文件，可以参考这个文件进行下面的阅读。</p>
