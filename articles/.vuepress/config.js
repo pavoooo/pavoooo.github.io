@@ -9,7 +9,8 @@ module.exports = {
     base: '/blog/',
     serviceWorker: true,
     head: [
-        ['link', { rel: 'icon', type: 'image/x-icon',  href: '/favicon.ico' }]
+        ['link', { rel: 'icon', type: 'image/x-icon',  href: '/favicon.ico' }],
+        ['script', { type: 'text/javascript', src: '/bdtj.js' }]
     ],
     themeConfig: {
         serviceWorker: {
