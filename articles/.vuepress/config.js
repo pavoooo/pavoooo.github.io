@@ -18,5 +18,8 @@ module.exports = {
         nav: [
             { text: 'Github', link: 'https://github.com/zhaosaisai' }
         ]
+    },
+    markdown: {
+        level: 2
     }
 }
