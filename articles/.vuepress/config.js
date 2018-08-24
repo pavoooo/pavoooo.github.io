@@ -20,6 +20,9 @@ module.exports = {
         ]
     },
     markdown: {
-        level: 2
+        anchor: {
+            level: 2
+        },
+        lineNumbers: true
     }
 }
