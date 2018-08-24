@@ -2,7 +2,11 @@
 
 set -e
 
-cp -R /Users/zhaosai/Documents/51s/own/vueps/.vuepress/dist ./blog
+rm -rf ./blog
+
+mkdir ./blog
+
+cp -R /Users/zhaosai/Documents/51s/own/vueps/.vuepress/dist/* ./blog
 
 git status
 
