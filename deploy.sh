@@ -2,17 +2,16 @@
 
 set -e
 
-rm -rf ./blog
+cd articles
 
-mkdir ./blog
+vuepress build
 
-cp -R /Users/zhaosai/Documents/51s/own/vueps/.vuepress/dist/* ./blog
+cd -
 
 git status
 
 git add -A
 
-git commit -m 'deploy'
+git commit -m "deploy in `date +"%Y-%m-%d %H:%m:%S"`"
 
 git push origin master
-
