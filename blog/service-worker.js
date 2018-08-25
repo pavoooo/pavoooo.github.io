@@ -21,35 +21,35 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "2018/MessageChannel那些事.html",
-    "revision": "6b842a3a4f0a3cd647a09bf94fdc1171"
+    "revision": "5109ecd5f1d187e105426c3b300871a6"
   },
   {
     "url": "2018/关于JavaScript的一些Tips.html",
-    "revision": "216834701c694954fc4e1c9e87e39b5b"
+    "revision": "598a775ae64faeba5ac5c3814f38f0e3"
   },
   {
     "url": "2018/写一个webpack的plugin--实战篇.html",
-    "revision": "2e1f43ee9113ca791ad88b5ed4bbdde1"
+    "revision": "72f46ad9c7e9d6a91859354f10f78006"
   },
   {
     "url": "2018/写一个webpack的plugin--理论篇.html",
-    "revision": "25ad098769afe36fc0123483e6d06fa5"
+    "revision": "a4060d266eccea147483f138f7d70f64"
   },
   {
     "url": "2018/探探scrollIntoView.html",
-    "revision": "2c19dadef689f32203c84b9f4ffcc732"
+    "revision": "ef99b1d0dd0e131e4d9560955e08f38b"
   },
   {
     "url": "2018/浏览器异步处理之MutationObserver.html",
-    "revision": "1f26e4b021617c7c1b1e17c630f1510b"
+    "revision": "62bb29ba9ac77a263f0468bd96157a86"
   },
   {
     "url": "2018/跨域解决方案.html",
-    "revision": "860bfacbdb8f9d9d147fb6c36f02e57c"
+    "revision": "f741731164d17cf563e5ba7038da013e"
   },
   {
     "url": "404.html",
-    "revision": "5347fe867f4e6541269461bdbe5d6698"
+    "revision": "3e47e9b46d8baa1a25445b284719d61c"
   },
   {
     "url": "assets/css/0.styles.b82299d2.css",
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "revision": "eeecfb37b415ca82dcfe89bf0a8d1e4f"
   },
   {
-    "url": "assets/js/11.36f0219e.js",
-    "revision": "d3913ec987d46d0cad0930e4d87d77f0"
+    "url": "assets/js/11.6a840a51.js",
+    "revision": "a16ac5b398658f35f486db3e1e80dbd7"
   },
   {
     "url": "assets/js/2.285762ea.js",
@@ -100,8 +100,8 @@ self.__precacheManifest = [
     "revision": "293f49aa88c0fbaacafca0f4a6c058f0"
   },
   {
-    "url": "assets/js/app.0ad6857f.js",
-    "revision": "6ac380280cd0a479c77a9ee307af3b87"
+    "url": "assets/js/app.19912118.js",
+    "revision": "04022e2a1f9b12fa459751a1f117d1e3"
   },
   {
     "url": "bdtj.js",
@@ -133,7 +133,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "7ff82e5e655ad227a69bd4827388e4ed"
+    "revision": "897e588dd759af9046fca7e264c66e49"
   },
   {
     "url": "logo.gif",
