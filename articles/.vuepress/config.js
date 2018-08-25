@@ -8,6 +8,11 @@ module.exports = {
     dest: resolve('./blog'),
     base: '/blog/',
     serviceWorker: true,
+    locales: {
+        '/': {
+            path: '/b/'
+        }
+    },
     head: [
         ['link', { rel: 'icon', type: 'image/x-icon',  href: '/favicon.ico' }],
         ['script', { type: 'text/javascript', src: '/bdtj.js' }]
@@ -18,7 +23,9 @@ module.exports = {
         },
         nav: [
             { text: 'Github', link: 'https://github.com/zhaosaisai' }
-        ]
+        ],
+        logo: '/logo.png',
+        sidebar: false
     },
     markdown: {
         anchor: {
