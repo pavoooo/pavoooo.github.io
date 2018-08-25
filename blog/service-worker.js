@@ -20,8 +20,12 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
  */
 self.__precacheManifest = [
   {
+    "url": "2018/跨域解决方案.html",
+    "revision": "54cadbee861df0c421771b20e1ce8645"
+  },
+  {
     "url": "404.html",
-    "revision": "406cb1603c59075103c0fe8a97526e71"
+    "revision": "beeb2f26155741818da46d7457b1df2a"
   },
   {
     "url": "assets/css/0.styles.b82299d2.css",
@@ -40,20 +44,48 @@ self.__precacheManifest = [
     "revision": "a0e74dc56677e75e244e484de91aca09"
   },
   {
-    "url": "assets/js/4.7af3f30d.js",
-    "revision": "ccf1bb10f01340d6ce6d6e415e449c72"
+    "url": "assets/js/4.0597ff7c.js",
+    "revision": "3a6defa512e604e1aebf9b35b3662d82"
   },
   {
-    "url": "assets/js/app.20cf2e76.js",
-    "revision": "9bac0191c95ff20686ceec132ebfffa8"
+    "url": "assets/js/5.1c5c2e4a.js",
+    "revision": "806e76795ffdef1899999d0705c840c6"
+  },
+  {
+    "url": "assets/js/app.82bd2662.js",
+    "revision": "9734f0fe9a1d9fb5dc2145f66c9bdcee"
   },
   {
     "url": "bdtj.js",
     "revision": "53e092997ed75ab8f6dddf8ee91ba10c"
   },
   {
+    "url": "cross1.png",
+    "revision": "6a8c4eca37594bff32b1db3b484add6e"
+  },
+  {
+    "url": "cross2.png",
+    "revision": "fad0871e05da7f7d2330a56e6e98337d"
+  },
+  {
+    "url": "cross3.png",
+    "revision": "a9990545318f181fe66faf09f64e2c33"
+  },
+  {
+    "url": "cross4.png",
+    "revision": "32d5a5e3138456c07d6f6b4245400263"
+  },
+  {
+    "url": "cross5.png",
+    "revision": "39615658937255cfbe03c03ccd5c445e"
+  },
+  {
+    "url": "cross6.png",
+    "revision": "fd4bb4251de4c0c48d46c3f2025255c2"
+  },
+  {
     "url": "index.html",
-    "revision": "0b44ac4ff5379d7d7d553fc77636329c"
+    "revision": "69e00f78f4916b2398f7de0ebefe3395"
   },
   {
     "url": "logo.gif",
