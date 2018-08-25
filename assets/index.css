@@ -19,11 +19,14 @@ a{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    min-width: 375px;
 }
 .motto {
+    width: 100%;
     color: #fff;
-    font-size: 3rem;
-    white-space: nowrap;
+    font-size: 40px;
     font-family: fantasy;
 }
 
@@ -37,11 +40,22 @@ a{
     line-height: 40px;
     border: solid 1px #fff;
     border-radius: 100px;
-    margin-left: 60px;
     transition: all .2s linear;
+}
+
+.btn-options a:first-child {
+    margin-right: 60px;
 }
 
 .btn-options a:hover {
     color: #4fc08d;
     background-color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .motto span{
+        white-space: nowrap;
+        display: block;
+        font-size: 28px;
+    }
 }
