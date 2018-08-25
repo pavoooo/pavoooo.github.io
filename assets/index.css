@@ -8,3 +8,40 @@ body {
     height: 100%;
     background-color: #4fc08d;
 }
+a{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    display: inline-block;
+}
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.motto {
+    color: #fff;
+    font-size: 3rem;
+    white-space: nowrap;
+    font-family: fantasy;
+}
+
+.btn-options {
+    text-align: center;
+    margin-top: 40px;
+}
+.btn-options a {
+    width: 88px;
+    height: 40px;
+    line-height: 40px;
+    border: solid 1px #fff;
+    border-radius: 100px;
+    margin-left: 60px;
+    transition: all .2s linear;
+}
+
+.btn-options a:hover {
+    color: #4fc08d;
+    background-color: #fff;
+}
