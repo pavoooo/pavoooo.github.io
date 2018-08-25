@@ -1,6 +1,8 @@
 # My Articles
 
 ## 2018
+- :book: [Node常见加密方法](/2018/Node常见加密方法.html)
+- :book: [模拟call方法](/2018/模拟call方法.html)
 - :book: [Vue源码之nextTick](/2018/Vue源码之nextTick.html)
 - :book: [Vue源码之错误处理](/2018/Vue源码之错误处理.html)
 - :book: [Vue源码之工具函数](/2018/Vue源码之工具函数.html)

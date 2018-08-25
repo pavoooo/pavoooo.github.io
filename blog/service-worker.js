@@ -21,55 +21,55 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "2018/MessageChannel那些事.html",
-    "revision": "330cd94e538ac1e916bf084d5846443c"
+    "revision": "63ec892ff089cd4378fc3f45dc762555"
   },
   {
     "url": "2018/Node常见加密方法.html",
-    "revision": "7d778ff650692246c40d31b95aa653bc"
+    "revision": "df9f19ea6cb4f431f7875ca8f56ecd3c"
   },
   {
     "url": "2018/Vue源码之nextTick.html",
-    "revision": "14d479751fec295d9b7e79a275360fde"
+    "revision": "3b60f6da85cd07e083cdf46d4acdb89b"
   },
   {
     "url": "2018/Vue源码之工具函数.html",
-    "revision": "750c40fca393740e041e3a985947afa8"
+    "revision": "8928e91cbdf51052072952f842f4fcc7"
   },
   {
     "url": "2018/Vue源码之错误处理.html",
-    "revision": "addb9b6efd6b879e4a47c3fd7a0995cd"
+    "revision": "0a019d0b6fd73d35557820b559bff279"
   },
   {
     "url": "2018/关于JavaScript的一些Tips.html",
-    "revision": "bffe59041c0ff37b777e863190b669a6"
+    "revision": "71e112829e33b5840d2dd715ea063199"
   },
   {
     "url": "2018/写一个webpack的plugin--实战篇.html",
-    "revision": "011c3585477c2c7f8e1d9be438a6e89a"
+    "revision": "61ffaf193c78d8f64fedc5d8026cd819"
   },
   {
     "url": "2018/写一个webpack的plugin--理论篇.html",
-    "revision": "56623470a88e5a2103d3f57b12f8fe28"
+    "revision": "2dd5aa3173ac18fac212c2101fad1798"
   },
   {
     "url": "2018/探探scrollIntoView.html",
-    "revision": "404eee64b3260b37b9596409d43a87a4"
+    "revision": "e69fca72eeb883fb8ecffc82e4a27177"
   },
   {
     "url": "2018/模拟call方法.html",
-    "revision": "d2ba8d1cc06f41d4560ef83f6b2e9914"
+    "revision": "d5a46850c65083e37cfcc6ce36adb669"
   },
   {
     "url": "2018/浏览器异步处理之MutationObserver.html",
-    "revision": "6363285c6aadabd20123a7e9d4d1a5b8"
+    "revision": "57bfc1e3eedcc5d2d492cf66c7ea537d"
   },
   {
     "url": "2018/跨域解决方案.html",
-    "revision": "e92420a7227ab7c9a57b064d230c76a6"
+    "revision": "641c6addcb2eb0622c67f078bd9cbd5b"
   },
   {
     "url": "404.html",
-    "revision": "0faae3d6691ff72b2fd5ed8adb545df6"
+    "revision": "a0157c11287f0553cb49b0fd9a84c38c"
   },
   {
     "url": "assets/css/0.styles.b82299d2.css",
@@ -104,8 +104,8 @@ self.__precacheManifest = [
     "revision": "2ec61833c456478d8d5a571dc8248999"
   },
   {
-    "url": "assets/js/16.d3bb9249.js",
-    "revision": "a31c06c943bf7efe8a6070f87ce16505"
+    "url": "assets/js/16.57a9059b.js",
+    "revision": "d8bf7a8b2042894d8496c01408f22af1"
   },
   {
     "url": "assets/js/2.285762ea.js",
@@ -140,8 +140,8 @@ self.__precacheManifest = [
     "revision": "4bb2790e5b1854520dc168fb4f67193e"
   },
   {
-    "url": "assets/js/app.132a34a6.js",
-    "revision": "d76b5ec095cdd2ad85b0ef78e86a3a36"
+    "url": "assets/js/app.a7f27428.js",
+    "revision": "adfcdcf86b9aeb06e8317e4927bcb54e"
   },
   {
     "url": "bdtj.js",
@@ -173,7 +173,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "75c526b83fdae2b343a8c58498307d72"
+    "revision": "b7690b14acc7b60a7fb3b9b92f98982a"
   },
   {
     "url": "logo.gif",
