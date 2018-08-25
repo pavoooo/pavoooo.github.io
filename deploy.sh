@@ -2,7 +2,7 @@
 
 set -e
 
-[ 1 = $1 ] && cd articles && vuepress build && cd -
+test $1 && [ 1 = $1 ] && cd articles && vuepress build && cd -
 
 git status
 
