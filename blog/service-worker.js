@@ -20,12 +20,36 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
  */
 self.__precacheManifest = [
   {
+    "url": "2018/MessageChannel那些事.html",
+    "revision": "6b842a3a4f0a3cd647a09bf94fdc1171"
+  },
+  {
+    "url": "2018/关于JavaScript的一些Tips.html",
+    "revision": "216834701c694954fc4e1c9e87e39b5b"
+  },
+  {
+    "url": "2018/写一个webpack的plugin--实战篇.html",
+    "revision": "2e1f43ee9113ca791ad88b5ed4bbdde1"
+  },
+  {
+    "url": "2018/写一个webpack的plugin--理论篇.html",
+    "revision": "25ad098769afe36fc0123483e6d06fa5"
+  },
+  {
+    "url": "2018/探探scrollIntoView.html",
+    "revision": "2c19dadef689f32203c84b9f4ffcc732"
+  },
+  {
+    "url": "2018/浏览器异步处理之MutationObserver.html",
+    "revision": "1f26e4b021617c7c1b1e17c630f1510b"
+  },
+  {
     "url": "2018/跨域解决方案.html",
-    "revision": "54cadbee861df0c421771b20e1ce8645"
+    "revision": "860bfacbdb8f9d9d147fb6c36f02e57c"
   },
   {
     "url": "404.html",
-    "revision": "beeb2f26155741818da46d7457b1df2a"
+    "revision": "5347fe867f4e6541269461bdbe5d6698"
   },
   {
     "url": "assets/css/0.styles.b82299d2.css",
@@ -36,6 +60,14 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
+    "url": "assets/js/10.da9407f9.js",
+    "revision": "eeecfb37b415ca82dcfe89bf0a8d1e4f"
+  },
+  {
+    "url": "assets/js/11.36f0219e.js",
+    "revision": "d3913ec987d46d0cad0930e4d87d77f0"
+  },
+  {
     "url": "assets/js/2.285762ea.js",
     "revision": "93afbd4e91ed17280e84a6930dc81b17"
   },
@@ -44,16 +76,32 @@ self.__precacheManifest = [
     "revision": "a0e74dc56677e75e244e484de91aca09"
   },
   {
-    "url": "assets/js/4.0597ff7c.js",
-    "revision": "3a6defa512e604e1aebf9b35b3662d82"
+    "url": "assets/js/4.d040136a.js",
+    "revision": "4749916e1eabdfd185f4dd5d2f800b72"
   },
   {
-    "url": "assets/js/5.1c5c2e4a.js",
-    "revision": "806e76795ffdef1899999d0705c840c6"
+    "url": "assets/js/5.cb6ee70c.js",
+    "revision": "a9af175157763e2f15414548e6340fa2"
   },
   {
-    "url": "assets/js/app.82bd2662.js",
-    "revision": "9734f0fe9a1d9fb5dc2145f66c9bdcee"
+    "url": "assets/js/6.e2583229.js",
+    "revision": "6679fab96e6815f22ac6796c1362c810"
+  },
+  {
+    "url": "assets/js/7.60e3883f.js",
+    "revision": "aa888978f46131a2dd40a055e2faa527"
+  },
+  {
+    "url": "assets/js/8.4167c1f5.js",
+    "revision": "24108bd506d1f07d2ca323a5a0b71a68"
+  },
+  {
+    "url": "assets/js/9.7cb25a34.js",
+    "revision": "293f49aa88c0fbaacafca0f4a6c058f0"
+  },
+  {
+    "url": "assets/js/app.0ad6857f.js",
+    "revision": "6ac380280cd0a479c77a9ee307af3b87"
   },
   {
     "url": "bdtj.js",
@@ -85,7 +133,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "69e00f78f4916b2398f7de0ebefe3395"
+    "revision": "7ff82e5e655ad227a69bd4827388e4ed"
   },
   {
     "url": "logo.gif",
