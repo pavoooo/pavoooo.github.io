@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模拟call方法 | 赛赛的空间</title>
+    <meta name="description" content="赵赛赛个人博客，关注前端技术，后端技术，喜欢编程。每天进步一点点就好啦！">
+    <link rel="icon" type="image/x-icon" href="/blog/favicon.ico">
+  <script type="text/javascript" src="/blog/bdtj.js"></script>
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.b82299d2.css" as="style"><link rel="preload" href="/blog/assets/js/app.132a34a6.js" as="script"><link rel="preload" href="/blog/assets/js/13.dd87c292.js" as="script"><link rel="prefetch" href="/blog/assets/js/7.2c57f0b7.js"><link rel="prefetch" href="/blog/assets/js/2.285762ea.js"><link rel="prefetch" href="/blog/assets/js/3.6bdd41a5.js"><link rel="prefetch" href="/blog/assets/js/4.e5134bbb.js"><link rel="prefetch" href="/blog/assets/js/5.fcf627b3.js"><link rel="prefetch" href="/blog/assets/js/6.18c0f231.js"><link rel="prefetch" href="/blog/assets/js/8.01a6d13c.js"><link rel="prefetch" href="/blog/assets/js/9.a86269f0.js"><link rel="prefetch" href="/blog/assets/js/10.df450f41.js"><link rel="prefetch" href="/blog/assets/js/11.03e3a203.js"><link rel="prefetch" href="/blog/assets/js/12.6653f774.js"><link rel="prefetch" href="/blog/assets/js/14.ebf6dd2e.js"><link rel="prefetch" href="/blog/assets/js/15.211e90db.js"><link rel="prefetch" href="/blog/assets/js/16.d3bb9249.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.b82299d2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">赛赛的空间</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/zhaosaisai" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/zhaosaisai" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1>模拟call方法</h1> <p><code>javascript</code>的函数有三个改变函数体内<code>this</code>指向的方法，分别是<code>call</code>， <code>apply</code>和<code>bind</code>。在我们模拟之前先看一下怎么用？比如，下面是<code>call</code>的基本用法：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> o1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> o2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token number">3</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">logA</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">logA</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// undefined</span>
+logA<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>o1<span class="token punctuation">)</span> <span class="token comment">// 2</span>
+logA<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>o2<span class="token punctuation">)</span> <span class="token comment">// 3</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>上面是<code>call</code>最简单的使用方法。模拟之前，有两件事情我们必须知道：</p> <ul><li><code>call</code>会立即调用对应的函数，这个方法的第一个参数是函数内的this指向，如果未定义，默认为函数的定义作用域</li> <li>后面的参数回作为调用函数的参数传入</li></ul> <p>这里，我们就需要思考一个问题。如何不借助上面的三个方法来改变函数体内的this指向呢？我们知道，javascript中函数体内的this不仅和定义的作用域有关，还和调用形式有关。比如：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> context <span class="token operator">=</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// undefined</span>
+
+context<span class="token punctuation">.</span>fn <span class="token operator">=</span> a
+context<span class="token punctuation">.</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 2</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>所以，我们可以利用上面的机制来模拟<code>call</code>的功能。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// call方法是挂载在函数的原型上的</span>
+Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">_call</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>context<span class="token punctuation">,</span> <span class="token operator">...</span>args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 默认设置为window</span>
+    context <span class="token operator">=</span> context <span class="token operator">||</span> window
+    <span class="token comment">// 按照上述的方式将函数体内的this指向context</span>
+    context<span class="token punctuation">.</span>_fn <span class="token operator">=</span> <span class="token keyword">this</span>
+    <span class="token comment">// 执行</span>
+    <span class="token keyword">const</span> result <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">_fn</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span>
+    <span class="token comment">// 删除_fn</span>
+    <span class="token keyword">delete</span> context<span class="token punctuation">.</span>_fn
+    <span class="token comment">// 返回结果</span>
+    <span class="token keyword">return</span> result
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>上面几行就大致的实现了call的功能，下面简单的测试一下。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>global<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">2</span>
+
+<span class="token keyword">function</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> context <span class="token operator">=</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token number">3</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 2</span>
+
+b<span class="token punctuation">.</span><span class="token function">_call</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token comment">// 3</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>下面再模拟一下<code>apply</code>的行为。<code>apply</code>的作用和<code>call</code>类似。唯一的不同就是传参方式的不同。明白了这一点，<code>apply</code>的行为我们也很好实现。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">_apply</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> <span class="token operator">...</span>args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    context <span class="token operator">=</span> context <span class="token operator">||</span> window
+    context<span class="token punctuation">.</span>fn <span class="token operator">=</span> <span class="token keyword">this</span>
+
+    <span class="token keyword">let</span> result
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>args<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        result <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        result <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">delete</span> context<span class="token punctuation">.</span>fn
+    <span class="token keyword">return</span> result
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>上面就是对<code>apply</code>方法的简单实现，测试如下：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> context <span class="token operator">=</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token number">3</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">,</span> args<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+a<span class="token punctuation">.</span><span class="token function">_apply</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>最后，需要实现的是对<code>bind</code>方法的实现。bind方法和call以及apply方法最大的区别就是，这个方法不会立即执行函数，而是会返回一个函数。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">_bind</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> <span class="token operator">...</span>args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> _this <span class="token operator">=</span> <span class="token keyword">this</span>
+
+    <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token constant">F</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 这里需要判断函数是不是F本身</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token keyword">instanceof</span> <span class="token class-name">F</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">_this</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">,</span> <span class="token operator">...</span>arguments<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> _this<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>context<span class="token punctuation">,</span> args<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token operator">...</span>arguments<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>上面就是对三个方法的一个简单模拟。</p></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/blog/assets/js/13.dd87c292.js" defer></script><script src="/blog/assets/js/app.132a34a6.js" defer></script>
+  </body>
+</html>
