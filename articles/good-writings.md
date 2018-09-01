@@ -1,6 +1,6 @@
 # 好文，大赞 :100:
 
-> 记录自己阅读过的好文章，值得反复推敲阅读。赞赞赞... `:us: ---> 英文文章`
+> 记录自己阅读过的好文章，值得反复推敲阅读。赞赞赞... (:us: ---> 英文文章)
 
 - [深入理解ES Modules](https://www.zcfy.cc/article/es-modules-a-cartoon-deep-dive-mozilla-hacks-the-web-developer-blog)
 
@@ -11,3 +11,5 @@
 - [一口（很长的）气了解 babel](https://zhuanlan.zhihu.com/p/43249121)
 - [PWA 在饿了么的实践经验](https://zhuanlan.zhihu.com/p/25800461)
 - [深入理解 JavaScript Event Loop](https://zhuanlan.zhihu.com/p/34229323)(备注：for浏览器)
+
+- [[译] Node.js 流: 你需要知道的一切](https://juejin.im/post/5940a9c3128fe1006a0ab176)
