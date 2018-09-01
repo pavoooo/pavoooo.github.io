@@ -21,10 +21,6 @@ function deploy() {
         if (stdout) {
             console.log(stdout)
         }
-        if (stderr) {
-            console.log('错误信息....')
-            console.error(stderr)
-        }
     })
 }
 
