@@ -10,6 +10,7 @@ const [title, link, publish] = process.argv.slice(2)
 
 function deploy() {
     const { exec } = require('child_process')
+    console.log('开始push...')
     const deploy = exec('./deploy.sh 1', {
         cwd: basePath
     }, (err, stdout, stderr) => {
@@ -26,6 +27,8 @@ if (!title || !link) {
     console.error('请输入完成的文章标题和链接')
     return process.exit(1)
 } else {
+    console.log('正在添加...')
     fs.appendFileSync(filePath, `${EOL}- [${title}](${link})`)
+    console.log('添加成功，正在push...')
     !!publish && deploy()
 }
