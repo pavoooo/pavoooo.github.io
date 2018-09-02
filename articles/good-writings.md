@@ -13,3 +13,4 @@
 - [深入理解 JavaScript Event Loop](https://zhuanlan.zhihu.com/p/34229323)(备注：for浏览器)
 
 - [[译] Node.js 流: 你需要知道的一切](https://juejin.im/post/5940a9c3128fe1006a0ab176)
+- [JS正则表达式完整教程（略长）](https://juejin.im/post/5965943ff265da6c30653879)

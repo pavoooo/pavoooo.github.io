@@ -6,9 +6,7 @@ const { EOL } = require('os')
 
 const basePath = '/Users/zhaosai/Documents/51s/own/zhaosaisai.github.io/'
 const filePath = path.join(basePath, 'articles/good-writings.md')
-
-const reader = fs.createReadStream(filePath, 'utf8')
-let chunk = ''
+const [title, link, publish] = process.argv.slice(2)
 
 function deploy() {
     const { exec } = require('child_process')
@@ -24,23 +22,10 @@ function deploy() {
     })
 }
 
-reader.on('data', data => {
-    chunk += data
-})
-
-reader.on('end', () => {
-    const [title, link, publish] = process.argv.slice(2)
-    if (!title || !link) {
-        console.error('请输入完成的文章标题和链接')
-        return process.exit(1)
-    }
-    const formatArticle = `- [${title}](${link})`
-    const writer = fs.createWriteStream(filePath, 'utf8')
-    writer.end(`${chunk}${EOL}${formatArticle}`)
-    writer.on('finish', () => {
-        console.log(`写入完毕!!! ${publish ? '正在push...' : ''}`)
-    })
+if (!title || !link) {
+    console.error('请输入完成的文章标题和链接')
+    return process.exit(1)
+} else {
+    fs.appendFileSync(filePath, `${EOL}- [${title}](${link})`)
     !!publish && deploy()
-})
-
-reader.read()
+}
