@@ -14,3 +14,4 @@
 
 - [[译] Node.js 流: 你需要知道的一切](https://juejin.im/post/5940a9c3128fe1006a0ab176)
 - [JS正则表达式完整教程（略长）](https://juejin.im/post/5965943ff265da6c30653879)
+- [深度剖析：如何实现一个 Virtual DOM 算法](https://github.com/livoras/blog/issues/13)
