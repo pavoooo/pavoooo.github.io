@@ -16,3 +16,4 @@
 - [JS正则表达式完整教程（略长）](https://juejin.im/post/5965943ff265da6c30653879)
 - [深度剖析：如何实现一个 Virtual DOM 算法](https://github.com/livoras/blog/issues/13)
 - [换个思路学习 nodejs](https://github.com/wangfupeng1988/node-tutorial)
+- [2018你应该知道的Web性能信息采集指南](https://mp.weixin.qq.com/s/UYcMeqZGblupVpGue-IThg)
