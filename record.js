@@ -6,7 +6,7 @@ const { EOL } = require('os')
 
 const basePath = '/Users/zhaosai/Documents/51s/own/zhaosaisai.github.io/'
 const filePath = path.join(basePath, 'articles/good-writings.md')
-const [title, link, publish] = process.argv.slice(2)
+const [title, link, publish, emoji] = process.argv.slice(2)
 
 function deploy() {
     const { exec } = require('child_process')
@@ -28,7 +28,7 @@ if (!title || !link) {
     return process.exit(1)
 } else {
     console.log('正在添加...')
-    fs.appendFileSync(filePath, `${EOL}- [${title}](${link})`)
-    console.log('添加成功，正在push...')
+    fs.appendFileSync(filePath, `${EOL}- [${title}](${link}) ${emoji ? ':'+emoji+':' : ''}`)
+    console.log('添加成功，马上push...')
     !!publish && deploy()
 }
