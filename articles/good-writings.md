@@ -1,6 +1,6 @@
 # 好文，大赞 :100:
 
-> 记录自己阅读过的好文章，值得反复推敲阅读。赞赞赞... (:us: ---> 英文文章)
+> 记录自己阅读过的好文章，值得反复推敲阅读。赞赞赞... (:us: ---> 英文文章，:book: ---> 开源电子书)
 
 - [深入理解ES Modules](https://www.zcfy.cc/article/es-modules-a-cartoon-deep-dive-mozilla-hacks-the-web-developer-blog)
 
@@ -17,3 +17,4 @@
 - [深度剖析：如何实现一个 Virtual DOM 算法](https://github.com/livoras/blog/issues/13)
 - [换个思路学习 nodejs](https://github.com/wangfupeng1988/node-tutorial)
 - [2018你应该知道的Web性能信息采集指南](https://mp.weixin.qq.com/s/UYcMeqZGblupVpGue-IThg)
+- [翻墙！免费科学上网方法与技巧](https://loremwalker.github.io/fq-book/\#/) :book:
