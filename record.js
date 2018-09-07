@@ -2,6 +2,7 @@
 
 const fs = require('fs')
 const path = require('path')
+const ora = require('ora')
 const { EOL } = require('os')
 
 const basePath = '/Users/zhaosai/Documents/51s/own/zhaosaisai.github.io/'
@@ -10,7 +11,7 @@ const [title, link, publish, emoji] = process.argv.slice(2)
 
 function deploy() {
     const { exec } = require('child_process')
-    console.log('开始push...')
+    const spinner = ora('开始push...').start()
     const deploy = exec('./deploy.sh 1', {
         cwd: basePath
     }, (err, stdout, stderr) => {
@@ -20,6 +21,9 @@ function deploy() {
         if (stdout) {
             console.log(stdout)
         }
+    })
+    deploy.on('exit', () => {
+        spinner.stop()
     })
 }
 

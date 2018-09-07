@@ -1,0 +1,11 @@
+{
+  "name": "zhaosaisai.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zhaosaisai/zhaosaisai.github.io.git",
+  "author": "zhaosaisai <zhaosaisai@u51.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ora": "^3.0.0"
+  }
+}
