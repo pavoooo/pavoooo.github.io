@@ -11,7 +11,7 @@ const [title, link, publish, emoji] = process.argv.slice(2)
 
 function deploy() {
     const { exec } = require('child_process')
-    const spinner = ora('开始push...').start()
+    const spinner = ora('正在push...').start()
     const deploy = exec('./deploy.sh 1', {
         cwd: basePath
     }, (err, stdout, stderr) => {

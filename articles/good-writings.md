@@ -19,3 +19,4 @@
 - [2018你应该知道的Web性能信息采集指南](https://mp.weixin.qq.com/s/UYcMeqZGblupVpGue-IThg)
 - [翻墙！免费科学上网方法与技巧](https://loremwalker.github.io/fq-book/\#/) :book:
 - [浅谈Hybrid技术的设计与实现](http://www.cnblogs.com/yexiaochai/p/4921635.html) 
+- [Learning Python: From Zero to Hero](https://medium.freecodecamp.org/learning-python-from-zero-to-hero-120ea540b567) :us:
