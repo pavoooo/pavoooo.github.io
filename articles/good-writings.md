@@ -25,3 +25,6 @@
 - [【微信小程序项目实践总结】-- 叶小钗](https://www.cnblogs.com/yexiaochai/p/9437101.html) 
 - [Getting started with Elasticsearch and Node.js](https://compose.com/articles/getting-started-with-elasticsearch-and-node/) :us:
 - [The definitive Node.js handbook](https://medium.freecodecamp.org/the-definitive-node-js-handbook-6912378afc6e) 
+- [Node进阶——之事无巨细手写Koa源码](https://mp.weixin.qq.com/s/DHHu-lUOOmLYw57H05LaBg) 
+- [从内部了解现代浏览器](https://juejin.im/post/5baca7616fb9a05d290eff2c) 
+- [前端安全系列（一）：如何防止XSS攻击？](https://tech.meituan.com/fe_security.html) 
