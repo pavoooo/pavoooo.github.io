@@ -27,4 +27,5 @@
 - [The definitive Node.js handbook](https://medium.freecodecamp.org/the-definitive-node-js-handbook-6912378afc6e) 
 - [Node进阶——之事无巨细手写Koa源码](https://mp.weixin.qq.com/s/DHHu-lUOOmLYw57H05LaBg) 
 - [从内部了解现代浏览器](https://juejin.im/post/5baca7616fb9a05d290eff2c) 
-- [前端安全系列（一）：如何防止XSS攻击？](https://tech.meituan.com/fe_security.html) 
+- [前端安全系列（一）：如何防止XSS攻击？](https://tech.meituan.com/fe_security.html)
+- [你不知道的Virtual DOM系列](https://segmentfault.com/a/1190000016129036)
