@@ -21,131 +21,131 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "2017/Centos6.8使用rpm安装mysql5.7.html",
-    "revision": "a8eae599025b5a77fa14f62386e2222c"
+    "revision": "834551adffe460ffa6d963ff4deddf96"
   },
   {
     "url": "2017/Mocha中文文档.html",
-    "revision": "64a0e3612a26b6450e0372007a0d3066"
+    "revision": "2519c39b2209c103f83f7d62d6eb5406"
   },
   {
     "url": "2017/react-start到co源码系列一.html",
-    "revision": "130a4df34c301287b21a0e801491ee9f"
+    "revision": "ab7668a237f386800d18e2bd2167578e"
   },
   {
     "url": "2017/react-start到co源码系列三.html",
-    "revision": "258c902e890a11b044bb8e316c526cae"
+    "revision": "afec1b9d0cde12974947d38f43961cae"
   },
   {
     "url": "2017/react-start到co源码系列二.html",
-    "revision": "18afff5ebcc1e853270068e2ac877ec0"
+    "revision": "0f247920e18b29ae0da8ee312f4e1360"
   },
   {
     "url": "2017/ReactDOM详解.html",
-    "revision": "4a16be21f0732da4a8375e8f364909e5"
+    "revision": "71504ccbc68350f00e3c65d64e586e00"
   },
   {
     "url": "2017/redux源码解读--applyMiddleware源码解析.html",
-    "revision": "53c78427b37810e5f5372b91fe192887"
+    "revision": "f28deff460e73f0064ed2468ca49860e"
   },
   {
     "url": "2017/redux源码解读－－bindActionCreators源码解析.html",
-    "revision": "a7e222c16d957dfc93b5c977c2488808"
+    "revision": "a5aaf5ed2c528e16718c6ebc3d562ceb"
   },
   {
     "url": "2017/redux源码解读--compose源码解析.html",
-    "revision": "b995763142256ef07fea9104b14e0eb4"
+    "revision": "dc17e6e3858e6d137967fc5ef56734cf"
   },
   {
     "url": "2017/redux源码解读－－createStore源码解析.html",
-    "revision": "b418e20d6a64d8dfc1c0b81579dc899c"
+    "revision": "89fe6fbd4242596e1e45968b63e541ec"
   },
   {
     "url": "2017/redux源码阅读－－主模块.html",
-    "revision": "73f7008931e598d2cd7dd73b8989ea91"
+    "revision": "3d704764c8ed92abc5799ac9000e9d1a"
   },
   {
     "url": "2017/redux源码阅读－－基本概括.html",
-    "revision": "fef0a139db412e9f7c7c24ed158ddc14"
+    "revision": "1623b0fb2645288b79062be52d1905ed"
   },
   {
     "url": "2018/MessageChannel那些事.html",
-    "revision": "f07650d7fa75f8cf3047dee3ad7508b2"
+    "revision": "287d035808148f6e4f1b507193673062"
   },
   {
     "url": "2018/Node常见加密方法.html",
-    "revision": "970fe2816143b66903ef2a3fe9d8a8cd"
+    "revision": "dbae79de8d1f2ea97f9e2fac92412307"
   },
   {
     "url": "2018/Node的二三四五六.html",
-    "revision": "8b8322c5d52617b7387275e2c8671fea"
+    "revision": "866e435001c8f9ba5be480f9b0fe0248"
   },
   {
     "url": "2018/Vue源码之nextTick.html",
-    "revision": "2cc22de4ba9a7dd35ce59a38b0de9268"
+    "revision": "4d98e55ea5e1d580a73e358e800dbadb"
   },
   {
     "url": "2018/Vue源码之工具函数.html",
-    "revision": "66e21daf13ba58e214791b295b198b36"
+    "revision": "7393c2d51e2086bd41d667f75e3ac8a7"
   },
   {
     "url": "2018/Vue源码之错误处理.html",
-    "revision": "6a5ad35fb873ae3b674cbf731ba424ef"
+    "revision": "637e6484a18b79549f799f7e3c4bd75d"
   },
   {
     "url": "2018/web安全之csrf攻击.html",
-    "revision": "a8e2c1da0cf068f024079aa26b2010ef"
+    "revision": "9a56afe494ce47afd05b80a99eb37dda"
   },
   {
     "url": "2018/web安全之xss攻击.html",
-    "revision": "eb0e09005096bf2d7c9ee1ead10006b2"
+    "revision": "da7f4dcdbdb3685f8f6815f71bba3b80"
   },
   {
     "url": "2018/web安全之点击劫持.html",
-    "revision": "7677e7ec2046efe4a7f52cde222b1091"
+    "revision": "2dccb5b60fbda983d840621a8b596079"
   },
   {
     "url": "2018/XMLHttpRequest.html",
-    "revision": "053ba09c58534e17aec7f36dbda0dfa8"
+    "revision": "3ce010cf19e26fc2e4b34806af257657"
   },
   {
     "url": "2018/关于JavaScript的一些Tips.html",
-    "revision": "3f24238e88f0acf646cd9aa05197c2e8"
+    "revision": "186a58adff9d6157795d3ccfe3a9e262"
   },
   {
     "url": "2018/写一个webpack的plugin--实战篇.html",
-    "revision": "673405d24784cf1e79bced344c499faf"
+    "revision": "cb3149f0f4844b34dfed3fb005a4c7f6"
   },
   {
     "url": "2018/写一个webpack的plugin--理论篇.html",
-    "revision": "7f093eaa4975e0b2e360aabe650e1151"
+    "revision": "8f396ab89dd5208402849a7ad3ba53a7"
   },
   {
     "url": "2018/小而美的CLI开发记录.html",
-    "revision": "ea49371fc5adf57d7dea85c2fcb0326d"
+    "revision": "8982fb404c5cc79a1d2102c6952fc335"
   },
   {
     "url": "2018/探探scrollIntoView.html",
-    "revision": "8b5de74e208996de16c11f4b5f9accc7"
+    "revision": "afcf24feaeb7277b8f8970f9a4d01ce4"
   },
   {
     "url": "2018/模拟call方法.html",
-    "revision": "90838998c185d4ef1ce519496c80de7d"
+    "revision": "cebcc68b097b9711b725bd7b0d245c07"
   },
   {
     "url": "2018/浏览器异步处理之MutationObserver.html",
-    "revision": "400d9a49f6859914f757e17d349d4ddd"
+    "revision": "8963fcc078d190d40ed1a5ba8d2d1307"
   },
   {
     "url": "2018/缓存那些事.html",
-    "revision": "2defc783b4e13205af8cec5ecdbfab1c"
+    "revision": "da9bf1cea5187899d82f3e0637189a4e"
   },
   {
     "url": "2018/跨域解决方案.html",
-    "revision": "129ea6c75caa8bfcced09d2b58fd9e48"
+    "revision": "711d141ce3b2f7d2720b3d8f13ae4ad2"
   },
   {
     "url": "404.html",
-    "revision": "dc50cdf7bb4c90d4386c17a3ab8bb0e6"
+    "revision": "f509b4bbda4bd608d31d6c0dd59ccf77"
   },
   {
     "url": "assets/css/0.styles.626dd732.css",
@@ -268,8 +268,8 @@ self.__precacheManifest = [
     "revision": "165eebe0b831ceb7c5d3dabd56065174"
   },
   {
-    "url": "assets/js/36.2b9032ad.js",
-    "revision": "684b415f6c9e2ad9c43d7f4342e4b66f"
+    "url": "assets/js/36.6904764c.js",
+    "revision": "b5f778902e680c00a5ad1ad934bf3642"
   },
   {
     "url": "assets/js/4.cd892f38.js",
@@ -296,8 +296,8 @@ self.__precacheManifest = [
     "revision": "b2e984fe6001e34ff4bdecd10b708ac4"
   },
   {
-    "url": "assets/js/app.97de70b7.js",
-    "revision": "612905dec56f7d9d3966c8b923ea9793"
+    "url": "assets/js/app.faade21d.js",
+    "revision": "e19892354ed1b68b1965712bf73c2498"
   },
   {
     "url": "bdtj.js",
@@ -377,11 +377,11 @@ self.__precacheManifest = [
   },
   {
     "url": "good-writings.html",
-    "revision": "dcd0cb4a294e932319ab3fd68e4605f1"
+    "revision": "492408b9fdb4f6ec376779c1530a8f89"
   },
   {
     "url": "index.html",
-    "revision": "2c38cd1400d38ddcb3bc6c84dab1ccdf"
+    "revision": "b60b8cfe2482a847bb07de165fb0f2d6"
   },
   {
     "url": "logo.gif",
