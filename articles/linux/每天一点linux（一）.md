@@ -57,3 +57,30 @@ ll /usr
 
 在使用`linux`系统时，我们操作系统的工具就是`终端`。`终端`又被称为`shell`。所谓`shell`，其实就是命令解释器，能够根据输入的命令让系统执行相应的操作。
 
+可以通过如下方式查看当前`linux`中包含哪些`shell`：
+
+```bash
+cat /etc/shells
+```
+
+![linux](/blog/linux-imgs/linux2.png)
+
+如下命令可以查看当前系统正在使用的`shell`
+
+```bash
+echo $SHELL
+```
+
+![linux](/blog/linux-imgs/linux3.png)
+
+- **/bin/bash**：linux系统默认的shell
+- **/bin/sh**：已经被`/bin/bash`所代替
+- **/bin/dash**：比`/bin/bash`更轻量、更快速。但是没有`/bin/bash`常用
+- **/sbin/nologin**：如果一个用户的默认shell设置为/sbin/nologin，则这个用户是禁止登录系统的。
+- **/bin/zsh**：功能更加强大的shell
+
+上述的`shell`我们可以通过如下命令进行切换
+
+```bash
+chsh -s /bin/zsh # chsh -s 要切换的shell名称
+```

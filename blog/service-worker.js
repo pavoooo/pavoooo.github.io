@@ -21,131 +21,131 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "2017/Centos6.8使用rpm安装mysql5.7.html",
-    "revision": "f277236bb08b82dd164f4e5009c19d6d"
+    "revision": "8d714b31a10706dfb4bfc85004f08a29"
   },
   {
     "url": "2017/Mocha中文文档.html",
-    "revision": "17656d6d05dfdf85f9bdf7269d0e9452"
+    "revision": "38437af1b12f70089d88aac93edbb741"
   },
   {
     "url": "2017/react-start到co源码系列一.html",
-    "revision": "e5cc2d8ca27dcf8f0bda4cd5399f413e"
+    "revision": "22c7262cd8ee8744d33b11ac677bba06"
   },
   {
     "url": "2017/react-start到co源码系列三.html",
-    "revision": "8e8a85fe91be5632c711cebb76bfef10"
+    "revision": "743d86e858a852056bc6d8700962d024"
   },
   {
     "url": "2017/react-start到co源码系列二.html",
-    "revision": "5398c1117829141608b25050fc1f1b28"
+    "revision": "42669c47cd33795f7d3054c72a95a4a8"
   },
   {
     "url": "2017/ReactDOM详解.html",
-    "revision": "ba2c15672a59ba233fd42cbefa915b7c"
+    "revision": "d5d0f1d02c88f9818a4aee77a5bf7625"
   },
   {
     "url": "2017/redux源码解读--applyMiddleware源码解析.html",
-    "revision": "a0069a9fe1d5b017468040ea3d9e01bb"
+    "revision": "f64e517da02af71537624037abbedc49"
   },
   {
     "url": "2017/redux源码解读－－bindActionCreators源码解析.html",
-    "revision": "0a9dd2e2e5aaf4f8357aabd17c3b0c78"
+    "revision": "3be87500dbf79e853b9b6c949c0c4904"
   },
   {
     "url": "2017/redux源码解读--compose源码解析.html",
-    "revision": "7bc3dc43fe01e21e6c7e4d5bad3ee3a8"
+    "revision": "b50b45953901650d1f60d1cec70b6d08"
   },
   {
     "url": "2017/redux源码解读－－createStore源码解析.html",
-    "revision": "5ae23d129a387acdc4405ceeabae441b"
+    "revision": "4a999754bf95b942dc37cc31897414c7"
   },
   {
     "url": "2017/redux源码阅读－－主模块.html",
-    "revision": "d049ddf472370ad75da1234f395ed742"
+    "revision": "32aedd20c30a6366b36cd599ad48af99"
   },
   {
     "url": "2017/redux源码阅读－－基本概括.html",
-    "revision": "4d549be0717969d7748a6bd26ebeba3f"
+    "revision": "9f3e49cb7a01c07b6a84708fadcf7e3d"
   },
   {
     "url": "2018/MessageChannel那些事.html",
-    "revision": "a0b8892e301e5cda3eb427d51f461021"
+    "revision": "94a6f87b9fa1ca6311e9763f1c6818d6"
   },
   {
     "url": "2018/Node常见加密方法.html",
-    "revision": "c2d4e42455f09ab64cb1749d8fb2cf82"
+    "revision": "28505b8ec82ed769e7600e6c230ffa88"
   },
   {
     "url": "2018/Node的二三四五六.html",
-    "revision": "81904aac5d68505a20544e43a5a34778"
+    "revision": "f8f88581d5e511df769ce62cbd66d7a9"
   },
   {
     "url": "2018/Vue源码之nextTick.html",
-    "revision": "bcaab0ddefcad51158bb86a105cec096"
+    "revision": "e1db320ce0618c5eb0b017195fb51d91"
   },
   {
     "url": "2018/Vue源码之工具函数.html",
-    "revision": "356645ea085f4cf7093acd09cd2b3691"
+    "revision": "d8fa0263631175d98ecb1a4c13e55c5c"
   },
   {
     "url": "2018/Vue源码之错误处理.html",
-    "revision": "fafe3d7d08731860cef82ecbd5e80537"
+    "revision": "b6a1733d7e33199a9c0e5947711f34fc"
   },
   {
     "url": "2018/web安全之csrf攻击.html",
-    "revision": "819364ee859a5130e04600d8fb494bcd"
+    "revision": "8d8aacd83fcac5d9993e26560c7a1043"
   },
   {
     "url": "2018/web安全之xss攻击.html",
-    "revision": "3462efcde39f1e7d02902dd82e644fa2"
+    "revision": "9521f686f0201b9b151368bcb647336d"
   },
   {
     "url": "2018/web安全之点击劫持.html",
-    "revision": "e5aee5b62a438942af9aed5262203df7"
+    "revision": "bf55d3441786ae5d2ff66f29329cbc34"
   },
   {
     "url": "2018/XMLHttpRequest.html",
-    "revision": "de91a890b24f46bb33e8e128b6b65637"
+    "revision": "7d8788ac685dd1906dc3f62534e3e8ec"
   },
   {
     "url": "2018/关于JavaScript的一些Tips.html",
-    "revision": "c60997fa1839b58a932475274b9d718d"
+    "revision": "cb0729d43b5c31102c7ff391de2cde95"
   },
   {
     "url": "2018/写一个webpack的plugin--实战篇.html",
-    "revision": "95fb2ee9118610643ab2d7cd7b849c4d"
+    "revision": "011cb5b5447c86f7d091f051ea610406"
   },
   {
     "url": "2018/写一个webpack的plugin--理论篇.html",
-    "revision": "32c957844da9d9f69845d92af3931cda"
+    "revision": "d35e951b3110ac9e0784debf2e2503f0"
   },
   {
     "url": "2018/小而美的CLI开发记录.html",
-    "revision": "f55d2e171af5ba71ca4447f191803468"
+    "revision": "29c82eabacf24d5154264a46cb20dd12"
   },
   {
     "url": "2018/探探scrollIntoView.html",
-    "revision": "1b892840776372fe0caf13e525c619b6"
+    "revision": "30062b103809962930df63b1b73d2caf"
   },
   {
     "url": "2018/模拟call方法.html",
-    "revision": "4f5f16b15b497ac8aead6a56bb6968af"
+    "revision": "5e4b5f60aee3d719e8de82d3ffbe323c"
   },
   {
     "url": "2018/浏览器异步处理之MutationObserver.html",
-    "revision": "e4e4047e97a716b681b999d1c5655593"
+    "revision": "ab49104b248b9a37427465df6a881ab3"
   },
   {
     "url": "2018/缓存那些事.html",
-    "revision": "5abd373945d88d3565b22c63b3e55744"
+    "revision": "ddf0e9f89aef8689dd7e04dbc13f5415"
   },
   {
     "url": "2018/跨域解决方案.html",
-    "revision": "2019b77768702e84264f3610414d9f48"
+    "revision": "6a2e1efd90fb7e14b8837e362404b634"
   },
   {
     "url": "404.html",
-    "revision": "983a22ac4d384980a1e62fdab98a16a8"
+    "revision": "e331fde60207ba01d7b98bbe5138e249"
   },
   {
     "url": "assets/css/0.styles.626dd732.css",
@@ -276,8 +276,8 @@ self.__precacheManifest = [
     "revision": "8c3c23da07a75e5939c06cd38bdb3cc5"
   },
   {
-    "url": "assets/js/38.c5cd2016.js",
-    "revision": "6752fb10ab090ce6137b94b712f6072b"
+    "url": "assets/js/38.3ec010be.js",
+    "revision": "02e6a7b8fb2bf286c3cec5662e883184"
   },
   {
     "url": "assets/js/4.962e0513.js",
@@ -304,8 +304,8 @@ self.__precacheManifest = [
     "revision": "8bba8cb26924c2c8cf11ed5e9bda4420"
   },
   {
-    "url": "assets/js/app.97cf2c87.js",
-    "revision": "c1a81a6eb3776ee57d1a8b1d3146e6e1"
+    "url": "assets/js/app.c052ae33.js",
+    "revision": "73f468bb496a93253cbb0159f1eac933"
   },
   {
     "url": "bdtj.js",
@@ -385,23 +385,31 @@ self.__precacheManifest = [
   },
   {
     "url": "good-writings.html",
-    "revision": "90c0720f39324a267004b895ff1cf412"
+    "revision": "190a32b2f8505ba3ede310471f823f9e"
   },
   {
     "url": "index.html",
-    "revision": "70a21b00abf1fd65d9b736da52ff25fb"
+    "revision": "89c4e3cfe8add6be9e0d31e3b0ac134d"
   },
   {
     "url": "linux-imgs/linux1.png",
     "revision": "de75966c084ffcb9f57d7d6e181c55ee"
   },
   {
+    "url": "linux-imgs/linux2.png",
+    "revision": "d09e1126757e8b991fd8916169966322"
+  },
+  {
+    "url": "linux-imgs/linux3.png",
+    "revision": "faf2413d6748f51085a3f7353434fe8f"
+  },
+  {
     "url": "linux.html",
-    "revision": "c719b3c41f606d28deee9a85e827fe66"
+    "revision": "b3847368dd920195383b8e87b6a64261"
   },
   {
     "url": "linux/每天一点linux（一）.html",
-    "revision": "4bc3f9a1ac5fee8a47cd7879c162ddf4"
+    "revision": "d9f5d857d1830b9902252c3444ad3266"
   },
   {
     "url": "logo.gif",
