@@ -187,3 +187,194 @@ fi
 ```
 
 ![](/blog/linux-imgs/bash10.png)
+
+在`shell`中判断语句一般使用`[]`。在进行不同类型判断的时候也会有不同的操作符。比如在进行数值判断的时候会有这些操作符。
+
+```bash
+-lt：小于
+-gt：大于
+-le：小于或等于
+-ge：大于或等于
+-eq：等于
+-ne：不等于
+```
+
+比如：
+
+```bash
+if [ $a -gt 10 ] ==> 如果变量a的值大于10
+if [ $a -le 10 ] ==> 如果变量a的值小于等于10
+if [ $a -ne 10 ] ==> 如果变量a的值不等于10
+```
+
+除此，我们还可以借助`&&`，`||`进行多重条件的判断
+
+```bash
+if [ $a -gt 60] && [ $a -lt 80 ] ===> 变量a的值大于60且小于80
+if [ $a -gt 60 ] || [ $a -lt 30 ] ===> 变量a的值大于60或小于30，条件都成立
+```
+
+除了和数值进行比较，`shell`更多的是和文档进行比较，比如，判断一个文件是否存在或者文档是不是目录等。一般会涉及到如下的操作符
+
+```bash
+-e：判断文件或者目录是否存在
+-d：判断文件是否存在，而且是目录
+-f：判断文件是否存在而且是普通文件
+-r：判断文件是否有读权限
+-w：判断文件是否有写权限
+-x：判断文件是否有执行权限
+```
+
+下面是一些具体的使用例子
+
+```bash
+#!/bin/bash
+
+path='./test.js'
+
+if [ -e $path ]; then
+	echo "$path文件存在"
+fi
+
+if [ -d $path ]; then
+  echo "$path是目录"
+fi
+
+if [ -f $path ] && [ -x $path ]; then
+  echo "$path是文件而且是具有可执行权限"
+fi
+```
+
+上面就是`if`判断的基本形式，除了`if`判断，我们还经常使用的是`case`判断。
+
+`case`就类似于编程语言中的`switch...case`语句。只是写法不同：
+
+```bash
+case 变量 in
+value1)
+  command
+  ;;
+value2)
+  command
+  ;;
+*)
+  command
+  ;;
+esac
+```
+
+上面的格式中`value`是不限制个数的，一旦找到一个符合的，就会立即执行`command`，而且不会继续往下走。如果所有的`value`都不满足条件，则会执行`*`中的`command`。`*`也是可选的。
+
+比如：
+
+```bash
+#!/bin/bash
+read -p 'please input a number：' num
+res=$[$num%2]
+
+case $res in
+1)
+  echo "$num is odd"
+  ;;
+0)
+  echo "$num is even"
+  ;;
+*)
+  echo "$num is not a number"
+  ;;
+esac
+```
+
+## 循环
+
+`shell`中的循环一般有三种：`for`循环，`while`循环和`until`循环。这三种循环只是写法不同，彼此之间是可以转换的。
+
+### for循环
+
+`for`循环的基本格式如下：
+
+```bash
+for 变量 in v1 v2 ..
+do
+  cmd1
+  cmd2
+  ...
+done
+```
+
+比如输出`1-10`
+
+```bash
+#!/bin/bash
+
+for loop in 1 2 3 4 5 6 7 8 9 10
+do
+  echo "The value is $loop"
+done
+```
+
+![](/blog/linux-imgs/bash11.png)
+
+`in`后面也可以是命令的输出
+
+```bash
+#!/bin/bash
+
+for file in `ls`
+do
+  echo "当前文件 $file 的信息是："
+  ls -l $file
+done
+```
+
+![](/blog/linux-imgs/bash12.png)
+
+## while
+`while`循环用于不断的执行一条命令。基本格式如下
+
+```bash
+while 条件
+do
+  command
+done
+```
+
+比如，使用`while`循环输出`1-10`
+
+```bash
+#!/bin/bash
+
+int=1
+while (($int<11))
+do
+  echo "The value is $int"
+  int=$[$int+1]
+done
+```
+
+![](/blog/linux-imgs/bash13.png)
+
+## until
+`until`循环类似于`while`循环。until 循环执行一系列命令直至条件为 true 时停止。其格式如下
+
+```bash
+until 条件
+do
+  cmd1
+  ...
+done
+```
+
+同样输出`1-10`
+
+```bash
+#!/bin/bash
+
+int=1
+until [ $int -gt 10 ]
+do
+  echo "The value is $int"
+  int=$[$int+1]
+done
+```
+![](/blog/linux-imgs/bash14.png)
