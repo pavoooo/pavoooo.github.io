@@ -19,7 +19,11 @@ module.exports = {
         nav: [
             { text: '我的文章', link: '/' },
             { text: '阅读的好文', link: '/good-writings.html' },
-            { text: 'Linux', link: '/linux.html' },
+            { text: '记录', items: [{
+                text: 'Linux', link: '/linux.html',
+            }, {
+                text: 'Webkit', link: '/webkit.html',
+            }] },
             { text: 'Github', link: 'https://github.com/zhaosaisai' }
         ],
         logo: '/logo.png',
