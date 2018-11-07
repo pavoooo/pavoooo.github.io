@@ -378,3 +378,4 @@ do
 done
 ```
 ![](/blog/linux-imgs/bash14.png)
+
