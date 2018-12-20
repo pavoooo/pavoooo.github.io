@@ -30,3 +30,4 @@
 - [前端安全系列（一）：如何防止XSS攻击？](https://tech.meituan.com/fe_security.html)
 - [你不知道的Virtual DOM系列](https://segmentfault.com/a/1190000016129036)
 - [浏览器的工作原理：新式网络浏览器幕后揭秘](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/) 
+- [DevTools tips — day 1: the console dollars](https://medium.com/@tomsu/devtools-tips-day-1-the-console-dollars-3aa0d93e923c) 
