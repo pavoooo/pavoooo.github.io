@@ -2,6 +2,10 @@
 
 set -e
 
+NODE=`which node`
+
+$NODE ./sync.js
+
 test $1 && [ 1 = $1 ] && cd articles && vuepress build && cd -
 
 git status
