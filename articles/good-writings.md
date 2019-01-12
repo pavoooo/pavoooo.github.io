@@ -32,3 +32,4 @@
 - [浏览器的工作原理：新式网络浏览器幕后揭秘](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/) 
 - [DevTools tips — day 1: the console dollars](https://medium.com/@tomsu/devtools-tips-day-1-the-console-dollars-3aa0d93e923c) 
 - [新手也能看懂，消息队列其实很简单](https://www.itcodemonkey.com/article/12651.html) 
+- [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) 
