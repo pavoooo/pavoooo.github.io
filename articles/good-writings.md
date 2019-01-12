@@ -33,3 +33,4 @@
 - [DevTools tips — day 1: the console dollars](https://medium.com/@tomsu/devtools-tips-day-1-the-console-dollars-3aa0d93e923c) 
 - [新手也能看懂，消息队列其实很简单](https://www.itcodemonkey.com/article/12651.html) 
 - [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) 
+- [深入理解 Node.js Stream 内部机制](http://taobaofed.org/blog/2017/08/31/nodejs-stream/) 
