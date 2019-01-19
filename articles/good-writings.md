@@ -34,3 +34,4 @@
 - [新手也能看懂，消息队列其实很简单](https://www.itcodemonkey.com/article/12651.html) 
 - [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) 
 - [深入理解 Node.js Stream 内部机制](http://taobaofed.org/blog/2017/08/31/nodejs-stream/) 
+- [Learn Node.js from Top 50 Articles for the Past Year (v.2019)](https://medium.mybridge.co/learn-node-js-from-top-50-articles-for-the-past-year-v-2019-2ec0a6a2cfa2) 
