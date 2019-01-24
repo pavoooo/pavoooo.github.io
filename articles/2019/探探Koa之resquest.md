@@ -1,8 +1,8 @@
-# 探探Koa之response
+# 探探Koa之resquest
 
 `Koa`中`request`模块是对原生`http`请求`req`对象的包装和增强。下面会按照先前梳理的顺序为大家一一介绍各个属性和方法的具体实现细节。
 
-[request](https://zhaosaisai.com/blog/request.svg)
+![request](https://zhaosaisai.com/blog/request.svg)
 
 ## 属性
 
