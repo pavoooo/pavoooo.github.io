@@ -1,5 +1,4 @@
 # 超长typescript记录
-
 ## Typescript介绍
 
 - `Typescript`是一款由微软开发的一款开源的编程语言
@@ -369,3 +368,168 @@ getInfo(123)
 
 getInfo(true) // ts 编译会报错
 ```
+
+## 类
+
+`ts`中的类通过`class`关键字定义，但其功能比`es6`语法更加强大。下面是一个简单的类的定义
+
+```js
+class Person {
+  // 构造函数
+  constructor(name: string, age: number) {
+    this.name = name
+    this.age = age
+  }
+  // 定义name属性
+  name: string;
+
+  // 定义age属性
+  age: number;
+
+  // 定义一个方法
+  say(): string {
+    return `${this.name}: ${this.age}`
+  }
+}
+
+const p = new Person('saisai', 24)
+
+const p1 = new Person(24, 'saisai') // ts 编译会报错
+```
+
+### 修饰符
+
+`typescript`中的`class`提供了三种类修饰符：`public`，`protected`，`private`
+
+- **public**：公有属性和方法，在类和子类中以及类外都能访问的属性和方法
+- **protected**：保护属性和方法，在类和子类中可以访问，类外无法访问
+- **private**：私有属性和方法，在类中可以访问，子类和类外是无法访问的。
+
+```js
+class Person {
+  // 公有属性
+  public name: string;
+  // 保护属性
+  protected height: number;
+  // 私有属性
+  private age: number;
+
+  constructor(name: string, height: number, age: number) {
+    this.name = name;
+    this.age = age;
+    this.height = height;
+  }
+
+  // 共有方法
+  public sayName(): string {
+    return this.name
+  }
+
+  // 保护方法
+  protected sayHeight(): number {
+    return this.height
+  }
+
+  // 私有方法
+  private sayAge(): number {
+    return this.age
+  }
+}
+
+const person = new Person('saisai', 180, 24)
+
+console.log(person.sayName())
+console.log(person.sayHeight()) // [ts] 属性“sayHeight”受保护，只能在类“Person”及其子类中访问。
+console.log(person.sayAge()) // [ts] 属性“sayAge”为私有属性，只能在类“Person”中访问。
+
+// 子类中的现象也是如此
+```
+
+### 静态属性和静态方法
+
+`静态属性`和`静态方法`是直接定义在类上面，访问的时候也需要通过类去访问。`静态属性`和`静态方法`需要通过关键字`static`去定义。静态方法中的`this`指向`类`本身。
+
+```js
+class Person {
+  public name: string;
+
+  // 静态方法
+  static staticName: string;
+  constructor(name: string) {
+    // 实例属性
+    this.name = name
+  }
+
+  // 实例方法
+  sayName(): string {
+    return this.name
+  }
+
+  // 静态方法
+  static sayStaticName(): string {
+    // 这里的 this 指向类本身
+    return this.staticName
+  }
+}
+```
+
+### 多态
+
+`多态`指的就是父类定义一个方法而不去实现它，让继承它的子类去实现它，每一个子类都有不同的表现。多态也是继承的一种表现。
+
+```js
+class Animal {
+  public name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  eat():void {
+    console.log(this.name);
+  }
+}
+
+// Dog 类继承 Animal
+class Dog extends Animal {
+  constructor(name: string) {
+    super(name)
+  }
+
+  // 实现父类的方法
+  eat() {
+
+  }
+}
+```
+
+### 抽象类和抽象方法
+
+`抽象类`是指只能够被其他类继承而不能被直接实例化的类。
+`抽象方法`也是指那些只能被定义而不能被实现，而且子类必须实现的方法。而且，`抽象方法`只能放在抽象类中。抽象类中可以包含非抽象方法。
+
+`抽象类`和`抽象方法`都是通过关键字`abstract`声明
+
+```js
+abstract class Animal {
+  abstract eat(): string;
+}
+
+class Dog extends Animal {
+  name: string;
+  constructor(name: string) {
+    super();
+    this.name = name;
+  }
+
+  // 必须实现父类的抽象方法 eat
+  eat():string {
+    return this.name;
+  }
+}
+
+const a = new Animal // ts 编译报错 无法创建抽象类的实例
+
+const d = new Dog('a dog')
+```
+
