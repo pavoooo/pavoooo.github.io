@@ -1,4 +1,5 @@
 # 超长typescript记录
+
 ## Typescript介绍
 
 - `Typescript`是一款由微软开发的一款开源的编程语言
@@ -533,3 +534,211 @@ const a = new Animal // ts 编译报错 无法创建抽象类的实例
 const d = new Dog('a dog')
 ```
 
+## 接口
+
+在面向对象的编程语言中，接口是一种规范的定义，它定义了行为和动作的规范，在程序设计语言中，它起到了一种限制行为和规范的作用。接口定义了某一批类所需要遵守的规范，接口并不关心这些类方法的实现细节，只规定了这些**类中所需要必须实现的属性和方法**。
+
+### 属性接口
+
+这种类型的接口是对`json`类型的数据的约束，对`json`中包含的字段进行了规定。接口的定义如下
+
+```js
+interface 接口名称 {
+  约束一;
+  约束二;
+  ...
+  约束三;
+}
+```
+
+```js
+// 规定了参数必须要有一个属性是name且是字符串类型的字段
+// 而且这个对象中只能包含name属性
+function printLabel(label: {name: string}): void {
+  console.log(label)
+}
+
+printLabel({name: 'label'})
+printLabel({name: 'label', age: 23}) // ts 编译错误
+```
+
+通过接口`interface`进行约束
+
+```js
+interface FullName{
+  firstName: string;
+  lastName: string
+}
+
+function fullName(name: FullName): void {
+  console.log(name)
+}
+
+fullName({
+  firstName: 'zhao',
+  lastName: 'saisai'
+})
+```
+
+有些接口的属性是可选的，我们可按照如下方式定义
+
+```js
+interface OptionalProp {
+  name: string;
+  // 表示age是一个可选属性
+  age?: string;
+}
+```
+
+### 函数类型接口
+
+函数类型接口主要是对方法传入的参数和返回值进行限制。
+
+```js
+interface 接口名称 {
+  (函数参数列表限制): 返回值限制;
+}
+```
+
+比如：
+
+```js
+interface encrypt {
+  (key: string, val: string):string;
+}
+
+const md5: encrypt = (key: string, val: string): string => {
+  return key + val
+}
+```
+
+### 可索引接口
+
+可索引接口是对数组和对象的约束（不常用）。
+
+```js
+interface UserArr {
+  [index: number]: string
+}
+
+const arr: UserArr = ['hello', 'world']
+```
+
+### 类类型接口
+
+类类型接口是对类的约束，和抽象类比较相似。类类型接口通过`implements`关键字实现
+
+```js
+interface Animal {
+  name: string;
+
+  eat(str: string): string;
+
+  run(): void;
+}
+
+class Dog implements Animal {
+  name: string = 'dog';
+
+  eat(str: string) {
+    return str
+  }
+
+  run() {
+
+  }
+}
+```
+
+### 接口扩展
+
+接口扩展就是指接口可以继承接口。接口扩展也是通过关键字`extends`实现。
+
+```js
+interface Animal {
+  eat(): void;
+}
+
+interface Person extends Animal {
+  work(): void;
+}
+
+class Male implements Person {
+  work() {}
+  eat() {}
+}
+```
+
+## 泛型
+
+泛型就是解决类，接口，方法之间的复用性，以及对不确定数据类型的支持。泛型是可以支持不确定的数据类型。
+
+比如一个方法可能会返回`string`或者`number`类型
+
+```js
+function getData<T>(value: T): T {
+  return value
+}
+
+getData<number>(123)
+getData<string>('string')
+getData<string>(123) // ts 编译会报错
+```
+
+上面方法中的`T`表示的就是泛型，上述方法的限制就是给函数传入什么类型返回的就是什么类型。`T`名称可改，但是需要三者保持一致。当然也可以声明返回类型是`any`
+
+```js
+function getData<T>(value: T): any {
+  return value
+}
+```
+
+这个方法就对方法返回值的类型不作任何限制了。
+
+### 泛型类
+
+泛型类的定义如下
+
+```js
+class MinClass<T> {
+  public list:T[] = [];
+
+  add(value: T): void {
+    this.list.push(value)
+  }
+
+  min(): T {
+    return Math.min.apply(null, this.list)
+  }
+}
+
+const min = new MinClass<number>()
+
+min.add(1)
+min.add(2)
+min.add(3)
+```
+
+### 泛型接口
+
+```js
+interface Config {
+  <T>(value: T): T
+}
+
+const getData: Config = <T>(val: T): T => val
+
+getData<string>('hello world')
+```
+
+下面也是一种定义泛型接口的方式
+
+```js
+interface Config<T> {
+  (value: T): T
+}
+
+const getData: Config<string> = <T>(val: T): T => val
+
+getData('hello world')
+```
