@@ -1,6 +1,7 @@
 # My Articles
 
 ## 2019
+- :book: [超长typescript记录](https://zhaosaisai.com/blog/2019/超长typescript记录.html)
 - :book: [探探Koa之response](https://zhaosaisai.com/blog/2019/探探Koa之response.html)
 - :book: [探探Koa之resquest](https://zhaosaisai.com/blog/2019/探探Koa之resquest.html)
 - :book: [探探Koa之context](https://zhaosaisai.com/blog/2019/探探Koa之context.html)
@@ -43,4 +44,4 @@
 - :book: [react-start到co源码系列二](https://zhaosaisai.com/blog/2017/react-start到co源码系列二.html)
 - :book: [react-start到co源码系列一](https://zhaosaisai.com/blog/2017/react-start到co源码系列一.html)
 
-> Updated by saisai on 2019-1-30 00:17:13 
+> Updated by saisai on 2019-1-30 09:53:04 

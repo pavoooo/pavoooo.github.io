@@ -11,7 +11,6 @@
 ## typescript安装
 
 在使用`Typescript`之前，我们首先做的是安装`Typescript`。如果你选择全局安装
-
 ```bash
 npm install typescript -g
 ```
