@@ -21,167 +21,171 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "2017/Centos6.8使用rpm安装mysql5.7.html",
-    "revision": "813017d254416fd582b24eecdbf7eeab"
+    "revision": "cbafc8c3e13de013d6b679c8b06df34a"
   },
   {
     "url": "2017/Mocha中文文档.html",
-    "revision": "9ab8fa92974251809a6cb91b5f16b12c"
+    "revision": "6a9cb3c376cccb00dcb504b78b925a64"
   },
   {
     "url": "2017/react-start到co源码系列一.html",
-    "revision": "f876af8636922500d58a441b9c3d5742"
+    "revision": "1f2ca484c98c03184b2bfd136b697a46"
   },
   {
     "url": "2017/react-start到co源码系列三.html",
-    "revision": "24c03c847243e62f36fc0d1c9d1b323c"
+    "revision": "3b755a403b9480d3f9c3a4c5f153a97a"
   },
   {
     "url": "2017/react-start到co源码系列二.html",
-    "revision": "d22df3c7721b78f4f602b3763666ef85"
+    "revision": "62b44f429dedaeb9eacc6a6e6bfd6a68"
   },
   {
     "url": "2017/ReactDOM详解.html",
-    "revision": "3f8e7257811d1ee6d98e92253d0f34fd"
+    "revision": "0068a3551e5a41004f18c17a5f79659e"
   },
   {
     "url": "2017/redux源码解读--applyMiddleware源码解析.html",
-    "revision": "3edcec022989ebb15425ef14b05ecd68"
+    "revision": "9af62d97ff723d32221ed26a6acb0272"
   },
   {
     "url": "2017/redux源码解读－－bindActionCreators源码解析.html",
-    "revision": "07652f0555a972204628197d72f1ab70"
+    "revision": "046dfb8f94516637b1fbd90ecdc4d7c2"
   },
   {
     "url": "2017/redux源码解读--compose源码解析.html",
-    "revision": "99a2d6739f4be95fc76fa5002cfdae1b"
+    "revision": "5deacd2f33a4a5dd30bcb8c3b7fd1293"
   },
   {
     "url": "2017/redux源码解读－－createStore源码解析.html",
-    "revision": "06d0668a01058b86f7e162e6e1fbd149"
+    "revision": "47bb4eb4cf09cd348e953a671cd54278"
   },
   {
     "url": "2017/redux源码阅读－－主模块.html",
-    "revision": "3eb702ec81a93804e25293132d1a0a9e"
+    "revision": "afe4e6adce21c2e174b1e3a417e44f31"
   },
   {
     "url": "2017/redux源码阅读－－基本概括.html",
-    "revision": "20f5d8f16f37fb4a633798f24e170955"
+    "revision": "c009016dbfb059ffff0921c52fa1e820"
   },
   {
     "url": "2018/MessageChannel那些事.html",
-    "revision": "a4e774e061d0e7566ce7bc02053e22de"
+    "revision": "e3643912bca8d39602d5b0942a047817"
   },
   {
     "url": "2018/Node常见加密方法.html",
-    "revision": "9985218df022100827c99341682f6ed6"
+    "revision": "2d8ca9db49b3880fb0a3af941db3f4e4"
   },
   {
     "url": "2018/Node的二三四五六.html",
-    "revision": "ad5c5195f310db8a76254ef7ecd4b4ae"
+    "revision": "bc14f2c0082993a125ffd4c9a193b6e4"
   },
   {
     "url": "2018/Vue源码之nextTick.html",
-    "revision": "77c56f58c074648fd0a6b8e519abc280"
+    "revision": "e7395956bac811cf7cfb7fed8e29353b"
   },
   {
     "url": "2018/Vue源码之工具函数.html",
-    "revision": "ff106c83bb4962755f232d9115c1bdaa"
+    "revision": "c3b41ce912a2369683ff290a6a35ff77"
   },
   {
     "url": "2018/Vue源码之错误处理.html",
-    "revision": "6cff2fd22215a02fc193a9ca71c7f3c1"
+    "revision": "fea431c42941c99039c2393713655c12"
   },
   {
     "url": "2018/web安全之csrf攻击.html",
-    "revision": "b9ae11db4e2456eb09b0bb967c32a6f7"
+    "revision": "1415e9b639cc68a21574ca8422356a77"
   },
   {
     "url": "2018/web安全之xss攻击.html",
-    "revision": "af6864650afd333db1bb1b3756df5798"
+    "revision": "b2d2fcd176bcf892ca2e6c286bee5f7c"
   },
   {
     "url": "2018/web安全之点击劫持.html",
-    "revision": "7d6551472891d2a8b337a590337ece4c"
+    "revision": "06d2bdcdde6a191dfb0e520453c88558"
   },
   {
     "url": "2018/XMLHttpRequest.html",
-    "revision": "643c79b407e541640dbc032547ba7bc0"
+    "revision": "80340dba106cf934d5b92a25c4eb20da"
   },
   {
     "url": "2018/关于JavaScript的一些Tips.html",
-    "revision": "4af323595be12969396fc23bc7c21da5"
+    "revision": "6a883272cbfedd63b2e780267accbafe"
   },
   {
     "url": "2018/写一个webpack的plugin--实战篇.html",
-    "revision": "b41440776409cf21c575223e1f4697a7"
+    "revision": "19ad0ee06ef0eebc784c3bc84e14a402"
   },
   {
     "url": "2018/写一个webpack的plugin--理论篇.html",
-    "revision": "91efd6aa821444c60c7ed4b664bbf04d"
+    "revision": "c708bb9b537fc40431232c841fb20ed7"
   },
   {
     "url": "2018/小程序的坑坑坑-填填填.html",
-    "revision": "7059e9790eb42cc5513af0a8751c0a4e"
+    "revision": "597c2fa594a3c0af6a05f389b06b607c"
   },
   {
     "url": "2018/小而美的CLI开发记录.html",
-    "revision": "1f845b13ebbd4d157a56a2ce356f287b"
+    "revision": "b290accd32f43db88fd9c7f72135f962"
   },
   {
     "url": "2018/探探scrollIntoView.html",
-    "revision": "06bfe9b7adfe65b79ca43bc6100885ec"
+    "revision": "5a0a5cd3ff3cea88e4208ab131d38232"
   },
   {
     "url": "2018/模拟call方法.html",
-    "revision": "e11e9884ce82776d63df5e1f977a489d"
+    "revision": "4e1d58b48a51f74dd10afcd0d058ff81"
   },
   {
     "url": "2018/浏览器异步处理之MutationObserver.html",
-    "revision": "2ebb471924af136a6679256c3d128cbb"
+    "revision": "b1c2eca5bbb91e7bd0314c8f949bb246"
   },
   {
     "url": "2018/缓存那些事.html",
-    "revision": "6270195e794ee47551af51c53418aa8a"
+    "revision": "7399ccf85ee17b01abf57746318def93"
   },
   {
     "url": "2018/跨域解决方案.html",
-    "revision": "fcdd9ba6fba9a1d7aa2c0a84c3ca2727"
+    "revision": "fa00c3f4a128f1e3db2ce0316e983ee9"
   },
   {
     "url": "2019/Nginx学习之路_一.html",
-    "revision": "4ff083eb4269017f1e6276a4593aa874"
+    "revision": "ecfcf189c2db7fa7d5abfe7685b4d86b"
+  },
+  {
+    "url": "2019/Nginx学习之路_二.html",
+    "revision": "6995893c0936f55a9bb4951a78b1c4fb"
   },
   {
     "url": "2019/探探Koa.html",
-    "revision": "b18db832fe8b79f2434708149999755b"
+    "revision": "12cee20c41dbd9736bb6914490f9e44e"
   },
   {
     "url": "2019/探探Koa之application.html",
-    "revision": "7ca58e7e22f9076f1b5ba273e23b2c71"
+    "revision": "8ce826c0d34f08ece3e1b6ca543f4433"
   },
   {
     "url": "2019/探探Koa之context.html",
-    "revision": "02c3f4557cf32653c311b4484622723b"
+    "revision": "ca40dc94572bf87a0e08964bb4dc70f4"
   },
   {
     "url": "2019/探探Koa之response.html",
-    "revision": "55ea66d801c6a64c6f8dcda9babb5b74"
+    "revision": "755189ad1efea46c7979ba3a9a60dfaf"
   },
   {
     "url": "2019/探探Koa之resquest.html",
-    "revision": "677a8ef5a9c32a93b8aec008e9b71b73"
+    "revision": "8dc5cac922b72ddb21b38bdfbf3aef9f"
   },
   {
     "url": "2019/探探怎么获取随机端口.html",
-    "revision": "75fcb8722104f85422e0d68ac180914b"
+    "revision": "5cbce3cc97c1804666a89097f5e96f87"
   },
   {
     "url": "2019/超长typescript记录.html",
-    "revision": "fdb712588184f479c7753e299a732c9d"
+    "revision": "4fc53efe6c43634544baf2985b14c586"
   },
   {
     "url": "404.html",
-    "revision": "2ae79450f6f65bbbfb52247b738e4930"
+    "revision": "bc1845c3c99fea31f4f2fbc7aaf0adad"
   },
   {
     "url": "app1.png",
@@ -200,228 +204,232 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.16f9e743.js",
-    "revision": "ec02f0d72d2eb3d49ee9dba083bb5756"
+    "url": "assets/js/10.f945838f.js",
+    "revision": "a14b146689d04e20c67d278aac9cad0d"
   },
   {
-    "url": "assets/js/11.c605b3a9.js",
-    "revision": "59177c4241216c889feb7ae8a8655ada"
+    "url": "assets/js/11.49fcc2bd.js",
+    "revision": "29ec49768e261c30505dc2e3c86c44d5"
   },
   {
-    "url": "assets/js/12.be5e1c08.js",
-    "revision": "fc5599c20772d83673f96603c6f69f5a"
+    "url": "assets/js/12.d3602b67.js",
+    "revision": "1c1640274c2165f819aaf0478771acff"
   },
   {
-    "url": "assets/js/13.5bea419d.js",
-    "revision": "d630112f933ba89111ae0e09b626a194"
+    "url": "assets/js/13.70b305bb.js",
+    "revision": "9fdb75b28c467780d48659f6aba974e3"
   },
   {
-    "url": "assets/js/14.b95a57e5.js",
-    "revision": "e90650a41038091d0d239d6abce5dea3"
+    "url": "assets/js/14.84cb7623.js",
+    "revision": "9a7b5d541654fdd8e458670dad9c768d"
   },
   {
-    "url": "assets/js/15.a0a3fe15.js",
-    "revision": "ba2d4551aa1a141a05238c2a7e65c69b"
+    "url": "assets/js/15.17309f98.js",
+    "revision": "1179540c9372040b2c07643fc4b12f01"
   },
   {
-    "url": "assets/js/16.fbebf88c.js",
-    "revision": "9f5bad90fd7c3f4fc83f5f336f5ed81b"
+    "url": "assets/js/16.85d38bed.js",
+    "revision": "f8d2d4391fcf7bc5bec9f02bf4824ae8"
   },
   {
-    "url": "assets/js/17.d09da807.js",
-    "revision": "2fbbf301caaef601e05340931c640858"
+    "url": "assets/js/17.2724420e.js",
+    "revision": "dd2365adec46a99d37bc952d4b637629"
   },
   {
-    "url": "assets/js/18.c876b8e3.js",
-    "revision": "fdf23bc6bad16d84e76033d33b84804c"
+    "url": "assets/js/18.7e663776.js",
+    "revision": "37f3d38da45948b3023d059ae2c2c430"
   },
   {
-    "url": "assets/js/19.42acb898.js",
-    "revision": "384eb05ce5adb06d2d8f35306a93c5cd"
+    "url": "assets/js/19.c348a4ea.js",
+    "revision": "af13ceeb34a749b52514ec876d1a4de6"
   },
   {
     "url": "assets/js/2.285762ea.js",
     "revision": "93afbd4e91ed17280e84a6930dc81b17"
   },
   {
-    "url": "assets/js/20.96f2c86e.js",
-    "revision": "e3bbfd388e36433ccec9d6c29c85ac0e"
+    "url": "assets/js/20.137610b6.js",
+    "revision": "9f4f50a1c8b760f19c2e0fa5a93654cd"
   },
   {
-    "url": "assets/js/21.2c9feb8f.js",
-    "revision": "562c1345b63d3588312f4696ef1eb680"
+    "url": "assets/js/21.8047be57.js",
+    "revision": "f4c8dd5c9080372963620ff7a359ec25"
   },
   {
-    "url": "assets/js/22.46294920.js",
-    "revision": "f9e2a2f603e0a447b29a4705a350d6ed"
+    "url": "assets/js/22.3c91586d.js",
+    "revision": "e267b6a9c17ceaceba5d1e6beba58217"
   },
   {
-    "url": "assets/js/23.e2c28f97.js",
-    "revision": "25a11e1620787328a5a1e0d6f7602b8c"
+    "url": "assets/js/23.b8705739.js",
+    "revision": "762b6b358fa16590ebb827908a7834bc"
   },
   {
-    "url": "assets/js/24.1a2f8bd0.js",
-    "revision": "0fc1b6e327c50214c55c3ef6e4b0e7eb"
+    "url": "assets/js/24.209969f5.js",
+    "revision": "cab80a45f1718317e7e23555ba289ff3"
   },
   {
-    "url": "assets/js/25.dc3fc3d5.js",
-    "revision": "01aa6d91044b1897ba1f78820765c518"
+    "url": "assets/js/25.39334ae6.js",
+    "revision": "a5414f1b40ee6d3404574c202d64e866"
   },
   {
-    "url": "assets/js/26.5a83f7ab.js",
-    "revision": "f7543e3023e62f3816e35d162265f59e"
+    "url": "assets/js/26.924ba6a5.js",
+    "revision": "00e3a89cfeb4d5fed3c80c986f992d17"
   },
   {
-    "url": "assets/js/27.f3d9a921.js",
-    "revision": "159802fa8d2fef82dfd481111a8b3d99"
+    "url": "assets/js/27.ee623897.js",
+    "revision": "c9874ed30c1be907375e8cfc801ec45d"
   },
   {
-    "url": "assets/js/28.9129f804.js",
-    "revision": "3e4e9c3b52ac3cd375dbe1d23f3a25b1"
+    "url": "assets/js/28.ddd8ed04.js",
+    "revision": "a17fa8febe85e3a3a07ce95988f061eb"
   },
   {
-    "url": "assets/js/29.e044454f.js",
-    "revision": "b0b9ee83b53d8f5b3b4dbc35424f7f98"
+    "url": "assets/js/29.c51d216f.js",
+    "revision": "501013bf2a9ff1fc4985e7f0fde6cf24"
   },
   {
-    "url": "assets/js/3.01c91f28.js",
-    "revision": "5f2b2ba1bbfa2017fc455bd170db1fb8"
+    "url": "assets/js/3.1b4e239a.js",
+    "revision": "296e52e140f1058c4e99d2020a363324"
   },
   {
-    "url": "assets/js/30.91bdcbe5.js",
-    "revision": "5650efef85c803bf9659c3066871874c"
+    "url": "assets/js/30.97f1f641.js",
+    "revision": "7395f1eb34419ad1425b5484b6fe741f"
   },
   {
-    "url": "assets/js/31.f3a3ffdb.js",
-    "revision": "9a22ec75b5d46494544712e9fd35f069"
+    "url": "assets/js/31.442681c2.js",
+    "revision": "385da6e4a438785e092d692b27af51a9"
   },
   {
-    "url": "assets/js/32.7e4928d0.js",
-    "revision": "fcade0eeae466c4e7c94b5415f5f4506"
+    "url": "assets/js/32.163c3274.js",
+    "revision": "2b89d1bb522e3218d7a8e87ce9da71ce"
   },
   {
-    "url": "assets/js/33.18e5b2d3.js",
-    "revision": "eb92e2fe2173a2aee6f0892fd329932a"
+    "url": "assets/js/33.d43c2c54.js",
+    "revision": "cc5927619fa0843cc1b56eea24209eb5"
   },
   {
-    "url": "assets/js/34.f6686001.js",
-    "revision": "d9badc5da0e4ee1fc7a86f7c425d41fd"
+    "url": "assets/js/34.7d31ad6f.js",
+    "revision": "2d800e8368bd55eea620baca5dc9e0df"
   },
   {
-    "url": "assets/js/35.9e1c6cbb.js",
-    "revision": "57fad5a82236d90f29008e67261548d0"
+    "url": "assets/js/35.71c7a06f.js",
+    "revision": "0a7b4a47e90b3df79b8c06267fdd1763"
   },
   {
-    "url": "assets/js/36.a75e40d1.js",
-    "revision": "dda9da1f6b20c63639b7c5abfc0a05e3"
+    "url": "assets/js/36.23c5e740.js",
+    "revision": "10e5cb7618b5ab9f366dd6d63e07812c"
   },
   {
-    "url": "assets/js/37.2ca126ef.js",
-    "revision": "c0dffc7191f0fa97a523ac7e968be228"
+    "url": "assets/js/37.6c58131c.js",
+    "revision": "27edd8fb5ae0fbc1e7ddb898a2f146c1"
   },
   {
-    "url": "assets/js/38.cc720f17.js",
-    "revision": "35a3e8018d10978cecd1df15f82066f8"
+    "url": "assets/js/38.cd3cfc55.js",
+    "revision": "3b3306b53364592a7734c3b77abaad4e"
   },
   {
-    "url": "assets/js/39.b91f4a09.js",
-    "revision": "0b67baad0739dcc2d1e517ffd6f9b44f"
+    "url": "assets/js/39.ea75922f.js",
+    "revision": "b3515dce81ccdee5c61eaf7c35d260d7"
   },
   {
-    "url": "assets/js/4.78863714.js",
-    "revision": "b8312b73f9f2a9bc3883761c161bf636"
+    "url": "assets/js/4.f2c636f9.js",
+    "revision": "ddcde6b62ff5112cb1f7857fd00a355b"
   },
   {
-    "url": "assets/js/40.1e525e12.js",
-    "revision": "224ccd800629e68e25c374ca2ba3a210"
+    "url": "assets/js/40.b40229d8.js",
+    "revision": "9041d6ffc5566db662af035d0b6145bb"
   },
   {
-    "url": "assets/js/41.d1212d85.js",
-    "revision": "f0e64817f2b47f777d25cc86811cba20"
+    "url": "assets/js/41.60e0420f.js",
+    "revision": "4e706f207e5a7a1c38722408390bd3e0"
   },
   {
-    "url": "assets/js/42.be1ab124.js",
-    "revision": "4c802e220971d91096023464f40bddd7"
+    "url": "assets/js/42.1e3264ce.js",
+    "revision": "51882fc4188026458ea0be543db92fa5"
   },
   {
-    "url": "assets/js/43.d4872bce.js",
-    "revision": "6f8e572a9da885bc7f3d902355241591"
+    "url": "assets/js/43.f9d6c5c4.js",
+    "revision": "f700a5d05dd9a5382b65c36d46dd5421"
   },
   {
-    "url": "assets/js/44.53b88e91.js",
-    "revision": "ba5678ffe66f3d63fc74ed0842e177cf"
+    "url": "assets/js/44.600a108d.js",
+    "revision": "06d8914dce5f7fad0440fed34f397128"
   },
   {
-    "url": "assets/js/45.361f8ded.js",
-    "revision": "7941eaea944c25a02371137836e64eed"
+    "url": "assets/js/45.6def2cdd.js",
+    "revision": "b965df51632568b9865b2b1bc59f2bf2"
   },
   {
-    "url": "assets/js/46.e3b51e00.js",
-    "revision": "b683a49968ada9128210743ec03dbf72"
+    "url": "assets/js/46.4ec69293.js",
+    "revision": "3b155f2d2b3779a877020738f37eb6d3"
   },
   {
-    "url": "assets/js/47.5c895bec.js",
-    "revision": "4a6c287331b7a482d1cda94c5cae5452"
+    "url": "assets/js/47.a5ec1395.js",
+    "revision": "6772da59fc30db602eaa0d7451a1d20d"
   },
   {
-    "url": "assets/js/48.ba6bdf78.js",
-    "revision": "2ea76189ef20dd4acec72998b58e0d6d"
+    "url": "assets/js/48.7d1958f4.js",
+    "revision": "0760aabfbedf8ff28af9859a6ea9d61f"
   },
   {
-    "url": "assets/js/49.763b256a.js",
-    "revision": "60ebacae537fed9e59de8c55a8ab5b5d"
+    "url": "assets/js/49.c3e6a067.js",
+    "revision": "391c363edc20a3e0680082fdd10599a4"
   },
   {
-    "url": "assets/js/5.53f6544f.js",
-    "revision": "d93b1f64d66205d1b17d37fb075606f1"
+    "url": "assets/js/5.f22e182a.js",
+    "revision": "f756dda6a6cea539b6a9f0a1c286a525"
   },
   {
-    "url": "assets/js/50.3ee34b59.js",
-    "revision": "8ce792528acf545856a9331d8bcfd65f"
+    "url": "assets/js/50.04c509a6.js",
+    "revision": "32010e244de3c9c12ca23db847a54ddb"
   },
   {
-    "url": "assets/js/51.b1e68fb3.js",
-    "revision": "3f9e40851947cc70d133da9f4054c15a"
+    "url": "assets/js/51.4d1d730a.js",
+    "revision": "1244d1c66cae9000fc927c637dd933c7"
   },
   {
-    "url": "assets/js/52.eb278145.js",
-    "revision": "bd3d3dc037c76987261b0751fffac9c2"
+    "url": "assets/js/52.7fee22d1.js",
+    "revision": "bd9e954dde45346de8a4375fac4f9d61"
   },
   {
-    "url": "assets/js/53.9fdb60a1.js",
-    "revision": "08a9bc8a7f6787ff1118f59ff4dbec50"
+    "url": "assets/js/53.cc14aa5b.js",
+    "revision": "1aa0c0679497e9e0b6670abb82b540a8"
   },
   {
-    "url": "assets/js/54.5ec76c3f.js",
-    "revision": "e269070851be19e99393c19e8189c153"
+    "url": "assets/js/54.41d13935.js",
+    "revision": "a8d6fb4f453ff2bdc3db2746a0aed101"
   },
   {
-    "url": "assets/js/55.a61e9785.js",
-    "revision": "46e5e8260342383228a1eab4b879513d"
+    "url": "assets/js/55.773ad530.js",
+    "revision": "30931c309ef3912a2f8fcdda5f394a64"
   },
   {
-    "url": "assets/js/56.9c1161ba.js",
-    "revision": "2b364d799c8ce557288c3ce17eb11e2e"
+    "url": "assets/js/56.137364b2.js",
+    "revision": "df76e4538d17fbaf2601f0c8605ed07c"
   },
   {
-    "url": "assets/js/6.a653e20a.js",
-    "revision": "d49f784d16c6133348e220b155503b13"
+    "url": "assets/js/57.7ae2f8fc.js",
+    "revision": "2fb1921e6cc94fc07ece11aa231e5e93"
   },
   {
-    "url": "assets/js/7.90d2c0ad.js",
-    "revision": "e161ac896cd9358ea92c7e5f552ba7ef"
+    "url": "assets/js/6.705c6a76.js",
+    "revision": "c8d2711b3bd4041484ff85e5f5ad2ff6"
   },
   {
-    "url": "assets/js/8.34f98dff.js",
-    "revision": "fb5ab8b2f4df2477d1c7b271fec18637"
+    "url": "assets/js/7.1b37c5d0.js",
+    "revision": "93738013530f5a7281c60a2b905bd1a9"
   },
   {
-    "url": "assets/js/9.231afb19.js",
-    "revision": "f50e552c98f7449d2d0594b3457cbb5b"
+    "url": "assets/js/8.8c8fa426.js",
+    "revision": "a844e06967aac932a06408bed9539f78"
   },
   {
-    "url": "assets/js/app.446f2b1c.js",
-    "revision": "c8edfe5d491a5c9dd271283a2d69f731"
+    "url": "assets/js/9.8be4c074.js",
+    "revision": "0310271bd824732fed31862c890ef86d"
+  },
+  {
+    "url": "assets/js/app.4481c456.js",
+    "revision": "b1f5063b19399fb98fab88473c440da5"
   },
   {
     "url": "bdtj.js",
@@ -450,6 +458,10 @@ self.__precacheManifest = [
   {
     "url": "cache6.png",
     "revision": "7dacf6e3caa540c7d0537ecc6171f17c"
+  },
+  {
+    "url": "cdn.png",
+    "revision": "7271e59c92790959df5b7f0d9b49af0c"
   },
   {
     "url": "cli1.png",
@@ -504,12 +516,32 @@ self.__precacheManifest = [
     "revision": "b51c73ff363b94e4ba34765e3b3f3741"
   },
   {
+    "url": "dlhc.png",
+    "revision": "37ec98e74b03869d11bebaa8f96cab3e"
+  },
+  {
+    "url": "fxdl.png",
+    "revision": "538dd48e297e619ec5af79cde6d03e98"
+  },
+  {
+    "url": "fzjh1.png",
+    "revision": "f9a56893c50e1b4f8ea799bba9019c80"
+  },
+  {
+    "url": "fzjh2.png",
+    "revision": "2d03c29539bd863837bd3746c6421f95"
+  },
+  {
     "url": "good-writings.html",
-    "revision": "355b04b83d6716e8dfe6f95a95d28d26"
+    "revision": "f70c9c5b5d625600e1a3c5f6d49dca19"
+  },
+  {
+    "url": "gzip.png",
+    "revision": "19b287a19cea33b8c36d583ad04b22b6"
   },
   {
     "url": "index.html",
-    "revision": "352aebc3ec218efefc60e7b33e1960d2"
+    "revision": "5dffaf58e5f3f0c16959b4645f3c6ea9"
   },
   {
     "url": "linux-imgs/bash1.png",
@@ -1145,43 +1177,43 @@ self.__precacheManifest = [
   },
   {
     "url": "linux.html",
-    "revision": "0251efe30ff3c0f88908afa20de4619c"
+    "revision": "556fe7777149fb627fb43a126894f117"
   },
   {
     "url": "linux/每天一点linux（一）.html",
-    "revision": "53dc1b0b735a68d59aadd4f051fb3f86"
+    "revision": "c02dcfb4144166808a7acfeca659a216"
   },
   {
     "url": "linux/每天一点linux（七）.html",
-    "revision": "c89dfe93063a2ac392276d67e59ad1c0"
+    "revision": "6f8cdad106d9c194b2433b311a7dc1d1"
   },
   {
     "url": "linux/每天一点linux（三）.html",
-    "revision": "3c218e90dd73dd1e90029257e95d31b7"
+    "revision": "cf039c1773aafb044f1afce17be44a22"
   },
   {
     "url": "linux/每天一点linux（九）.html",
-    "revision": "266b39a0fe92908a9fb896dbbee42786"
+    "revision": "70049b5dca4b8dd6f0a20bfea0ab9f80"
   },
   {
     "url": "linux/每天一点linux（二）.html",
-    "revision": "5b334d66323bdbd961788475aadbfcf3"
+    "revision": "245d64d07991e850c639e42c294c7aa0"
   },
   {
     "url": "linux/每天一点linux（五）.html",
-    "revision": "4888ef1f3557077cdd51efe352ea3ce6"
+    "revision": "0d9515aa7763ad1969816e518bd6122c"
   },
   {
     "url": "linux/每天一点linux（八）.html",
-    "revision": "e61e3a39b7bac4c78d507b1bb3c0e8ce"
+    "revision": "6b413e372d34a846eb5902d26e61f7ba"
   },
   {
     "url": "linux/每天一点linux（六）.html",
-    "revision": "e633ed8dc0f67dea6c0d00d72ad9ae2f"
+    "revision": "06071a25080804935f09cc9857b35852"
   },
   {
     "url": "linux/每天一点linux（四）.html",
-    "revision": "a28eccaeb23cb160672555beee592d83"
+    "revision": "50b652ac40585691f1e186491d487ef5"
   },
   {
     "url": "logo.gif",
@@ -1304,8 +1336,12 @@ self.__precacheManifest = [
     "revision": "b36d12c60f87aed3dedec8b74ff996d9"
   },
   {
+    "url": "static_resource.png",
+    "revision": "f3dcd38e6388708caa77bcba8094fbf8"
+  },
+  {
     "url": "webkit.html",
-    "revision": "fe87c17e444f5cf35f9bb4e092b30dd0"
+    "revision": "a88262895e51ccc03d16b1388b1a0b07"
   },
   {
     "url": "xhr1.png",
@@ -1322,6 +1358,10 @@ self.__precacheManifest = [
   {
     "url": "xhr4.png",
     "revision": "db3f1cf090b2d709d66bc59827dd2fd7"
+  },
+  {
+    "url": "zxdl.png",
+    "revision": "91e2acb678a19dd649f78724afec4725"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();

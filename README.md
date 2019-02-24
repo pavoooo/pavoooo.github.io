@@ -1,6 +1,7 @@
 # My Articles
 
 ## 2019
+- :book: [Nginx学习之路NO.2](https://zhaosaisai.com/blog/2019/Nginx学习之路_二.html)
 - :book: [Nginx学习之路NO.1](https://zhaosaisai.com/blog/2019/Nginx学习之路_一.html)
 - :book: [超长typescript记录](https://zhaosaisai.com/blog/2019/超长typescript记录.html)
 - :book: [探探Koa之response](https://zhaosaisai.com/blog/2019/探探Koa之response.html)
@@ -45,4 +46,4 @@
 - :book: [react-start到co源码系列二](https://zhaosaisai.com/blog/2017/react-start到co源码系列二.html)
 - :book: [react-start到co源码系列一](https://zhaosaisai.com/blog/2017/react-start到co源码系列一.html)
 
-> Updated by saisai on 2019-2-24 12:40:14 
+> Updated by saisai on 2019-2-24 18:39:20 
