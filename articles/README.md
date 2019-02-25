@@ -1,8 +1,8 @@
 # My Articles
 
 ## 2019
-- :book: [Nginx学习之路NO.2](/2019/Nginx学习之路_二.html)
-- :book: [Nginx学习之路NO.1](/2019/Nginx学习之路_一.html)
+- :book: [Nginx学习之路-静态资源服务_代理_负载均衡](/2019/Nginx学习之路-静态资源服务_代理_负载均衡.html)
+- :book: [Nginx学习-安装_基本模块_请求限制_访问限制](/2019/Nginx学习-安装_基本模块_请求限制_访问限制.html)
 - :book: [超长typescript记录](/2019/超长typescript记录.html)
 - :book: [探探Koa之response](/2019/探探Koa之response.html)
 - :book: [探探Koa之resquest](/2019/探探Koa之resquest.html)
