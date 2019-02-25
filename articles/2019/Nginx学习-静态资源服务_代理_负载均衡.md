@@ -266,7 +266,7 @@ valid_referers none blocked 192.168.144.129 ~/google\./;
 
 Nginx配置代理主要是通过`proxy_pass`指令声明，语法如下：
 
-```conf
+```nginx
 syntax: proxy_pass url;
 default: --
 context: location, if in location, limit_except;
@@ -531,7 +531,7 @@ upstream saisai {
 
 #### url_hash
 
-```conf
+```nginx
 syntax: hash key [consistent]
 default: --
 context: upstream
@@ -583,7 +583,7 @@ context: http, server, location
 
 `proxy_cache_key`就是用来定义缓存的维度。其实就是缓存的key。
 
-```conf
+```nginx
 Syntax:	proxy_cache_key string;
 Default:  proxy_cache_key $scheme$proxy_host$request_uri;
 Context:	http, server, location
