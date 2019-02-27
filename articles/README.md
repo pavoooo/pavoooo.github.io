@@ -1,7 +1,7 @@
 # My Articles
 
 ## 2019
-- :book: [Nginx学习-Nginx学习-常见问题](/2019/Nginx学习-Nginx学习-常见问题.html)
+- :book: [Nginx学习-常见问题](/2019/Nginx学习-常见问题.html)
 - :book: [Nginx学习-rewrite_https](/2019/Nginx学习-rewrite_https.html)
 - :book: [Nginx学习-静态资源服务_代理_负载均衡](/2019/Nginx学习-静态资源服务_代理_负载均衡.html)
 - :book: [Nginx学习-安装_基本模块_请求限制_访问限制](/2019/Nginx学习-安装_基本模块_请求限制_访问限制.html)
