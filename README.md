@@ -1,8 +1,9 @@
 # My Articles
 
 ## 2019
+- :book: [Nginx学习-Nginx学习-常见问题](https://zhaosaisai.com/blog/2019/Nginx学习-Nginx学习-常见问题.html)
 - :book: [Nginx学习-rewrite_https](https://zhaosaisai.com/blog/2019/Nginx学习-rewrite_https.html)
-- :book: [Nginx学习之路-静态资源服务_代理_负载均衡](https://zhaosaisai.com/blog/2019/Nginx学习之路-静态资源服务_代理_负载均衡.html)
+- :book: [Nginx学习-静态资源服务_代理_负载均衡](https://zhaosaisai.com/blog/2019/Nginx学习-静态资源服务_代理_负载均衡.html)
 - :book: [Nginx学习-安装_基本模块_请求限制_访问限制](https://zhaosaisai.com/blog/2019/Nginx学习-安装_基本模块_请求限制_访问限制.html)
 - :book: [超长typescript记录](https://zhaosaisai.com/blog/2019/超长typescript记录.html)
 - :book: [探探Koa之response](https://zhaosaisai.com/blog/2019/探探Koa之response.html)
@@ -47,4 +48,4 @@
 - :book: [react-start到co源码系列二](https://zhaosaisai.com/blog/2017/react-start到co源码系列二.html)
 - :book: [react-start到co源码系列一](https://zhaosaisai.com/blog/2017/react-start到co源码系列一.html)
 
-> Updated by saisai on 2019-2-26 23:52:55 
+> Updated by saisai on 2019-2-27 23:33:48 
