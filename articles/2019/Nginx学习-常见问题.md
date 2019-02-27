@@ -306,7 +306,7 @@ location /request_path/image/ {
 
 Nginx会对用户上传的文件的大小进行限制，这个限制通过`client_max_body_size`来设置，可以通过这个指令来重设限制的大小。
 
-```conf
+```nginx
 Syntax:	client_max_body_size size;
 Default:	
 client_max_body_size 1m;
@@ -435,7 +435,7 @@ root hard nofile 65535
 
 `nginx`文件句柄的设置语法
 
-```conf
+```nginx
 Syntax:	worker_rlimit_nofile number;
 Default:	—
 Context:	main
