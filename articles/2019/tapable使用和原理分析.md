@@ -34,7 +34,7 @@ const {
 `tapable`是一个单独的包，我们可以使用`npm`来单独安装使用。
 
 ```bash
-npm install tapable -D
+npm install tapable
 ```
 
 下面是对`tapable`模块的一个简单使用。
