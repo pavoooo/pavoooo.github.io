@@ -1,5 +1,6 @@
 # My Articles
 ## 2019
+- :book: [travis自动化部署github项目到server](https://zhaosaisai.com/blog/2019/travis自动化部署github项目到server.html)
 - :book: [tapable使用和原理分析](https://zhaosaisai.com/blog/2019/tapable使用和原理分析.html)
 - :book: [webpack@4常用配置总结](https://zhaosaisai.com/blog/2019/webpack@4常用配置总结.html)
 - :book: [Nginx学习-常见问题](https://zhaosaisai.com/blog/2019/Nginx学习-常见问题.html)
@@ -49,4 +50,4 @@
 - :book: [react-start到co源码系列二](https://zhaosaisai.com/blog/2017/react-start到co源码系列二.html)
 - :book: [react-start到co源码系列一](https://zhaosaisai.com/blog/2017/react-start到co源码系列一.html)
 
-> Updated by saisai on 2019-3-2 23:15:53 
+> Updated by saisai on 2019-3-3 17:17:50 

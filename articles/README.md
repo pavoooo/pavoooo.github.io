@@ -1,5 +1,6 @@
 # My Articles
 ## 2019
+- :book: [travis自动化部署github项目到server](/2019/travis自动化部署github项目到server.html)
 - :book: [tapable使用和原理分析](/2019/tapable使用和原理分析.html)
 - :book: [webpack@4常用配置总结](/2019/webpack@4常用配置总结.html)
 - :book: [Nginx学习-常见问题](/2019/Nginx学习-常见问题.html)
