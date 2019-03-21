@@ -28,7 +28,7 @@
 
 **iptable过滤封包流程**
 
-![]('./iptables1.png')
+![]('/blog/iptables1.png')
 
 数据包可以分为两类：
 
@@ -110,7 +110,7 @@ iptables [-t 表名] 管理选项 [链名(规则名)] [条件匹配] [-j 目标�
 - 不指定链名的时候，默认是该表内的所有链
 - 除非设置规则链的缺省策略，否则需要指定匹配条件
 
-![](./iptables2.png)
+![](/blog/iptables2.png)
 
 ### iptables命令使用
 

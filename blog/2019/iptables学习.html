@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>iptables学习 | 赛赛的空间</title>
+    <meta name="description" content="赵赛赛个人博客，关注前端技术，后端技术，喜欢编程。每天进步一点点就好啦！">
+    <link rel="icon" type="image/x-icon" href="/blog/favicon.ico">
+  <script type="text/javascript" src="/blog/bdtj.js"></script>
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.626dd732.css" as="style"><link rel="preload" href="/blog/assets/js/app.fe1411be.js" as="script"><link rel="preload" href="/blog/assets/js/40.866dcfbb.js" as="script"><link rel="prefetch" href="/blog/assets/js/31.bc97a4a9.js"><link rel="prefetch" href="/blog/assets/js/2.285762ea.js"><link rel="prefetch" href="/blog/assets/js/3.7daf4b65.js"><link rel="prefetch" href="/blog/assets/js/4.f2c636f9.js"><link rel="prefetch" href="/blog/assets/js/5.f22e182a.js"><link rel="prefetch" href="/blog/assets/js/6.705c6a76.js"><link rel="prefetch" href="/blog/assets/js/7.1b37c5d0.js"><link rel="prefetch" href="/blog/assets/js/8.8c8fa426.js"><link rel="prefetch" href="/blog/assets/js/9.8be4c074.js"><link rel="prefetch" href="/blog/assets/js/10.f945838f.js"><link rel="prefetch" href="/blog/assets/js/11.49fcc2bd.js"><link rel="prefetch" href="/blog/assets/js/12.d3602b67.js"><link rel="prefetch" href="/blog/assets/js/13.70b305bb.js"><link rel="prefetch" href="/blog/assets/js/14.32cf3f5c.js"><link rel="prefetch" href="/blog/assets/js/15.21ca5469.js"><link rel="prefetch" href="/blog/assets/js/16.80a1f156.js"><link rel="prefetch" href="/blog/assets/js/17.c941d12d.js"><link rel="prefetch" href="/blog/assets/js/18.c1519b3a.js"><link rel="prefetch" href="/blog/assets/js/19.cde47560.js"><link rel="prefetch" href="/blog/assets/js/20.a764f705.js"><link rel="prefetch" href="/blog/assets/js/21.4c25a963.js"><link rel="prefetch" href="/blog/assets/js/22.843ae988.js"><link rel="prefetch" href="/blog/assets/js/23.e56ee754.js"><link rel="prefetch" href="/blog/assets/js/24.f41a29f7.js"><link rel="prefetch" href="/blog/assets/js/25.c4d70986.js"><link rel="prefetch" href="/blog/assets/js/26.634a6dd3.js"><link rel="prefetch" href="/blog/assets/js/27.b5ac4a66.js"><link rel="prefetch" href="/blog/assets/js/28.9d58c07c.js"><link rel="prefetch" href="/blog/assets/js/29.f7027845.js"><link rel="prefetch" href="/blog/assets/js/30.e3bac08b.js"><link rel="prefetch" href="/blog/assets/js/32.491e43af.js"><link rel="prefetch" href="/blog/assets/js/33.b7aec704.js"><link rel="prefetch" href="/blog/assets/js/34.1af87c74.js"><link rel="prefetch" href="/blog/assets/js/35.f975ac06.js"><link rel="prefetch" href="/blog/assets/js/36.fd0fb09e.js"><link rel="prefetch" href="/blog/assets/js/37.b5450d34.js"><link rel="prefetch" href="/blog/assets/js/38.6d340c09.js"><link rel="prefetch" href="/blog/assets/js/39.c018dab1.js"><link rel="prefetch" href="/blog/assets/js/41.f705a994.js"><link rel="prefetch" href="/blog/assets/js/42.498bffad.js"><link rel="prefetch" href="/blog/assets/js/43.1ab7c641.js"><link rel="prefetch" href="/blog/assets/js/44.a0335361.js"><link rel="prefetch" href="/blog/assets/js/45.db7feac0.js"><link rel="prefetch" href="/blog/assets/js/46.69b9a3b3.js"><link rel="prefetch" href="/blog/assets/js/47.08cf18fb.js"><link rel="prefetch" href="/blog/assets/js/48.d3ea8556.js"><link rel="prefetch" href="/blog/assets/js/49.3f5bfbf9.js"><link rel="prefetch" href="/blog/assets/js/50.4b8d9a0e.js"><link rel="prefetch" href="/blog/assets/js/51.b096aa51.js"><link rel="prefetch" href="/blog/assets/js/52.fb1524e0.js"><link rel="prefetch" href="/blog/assets/js/53.25ba6491.js"><link rel="prefetch" href="/blog/assets/js/54.8fd51477.js"><link rel="prefetch" href="/blog/assets/js/55.eb5eb293.js"><link rel="prefetch" href="/blog/assets/js/56.518fdb5d.js"><link rel="prefetch" href="/blog/assets/js/57.d5718c1d.js"><link rel="prefetch" href="/blog/assets/js/58.78a1fc52.js"><link rel="prefetch" href="/blog/assets/js/59.31312d2b.js"><link rel="prefetch" href="/blog/assets/js/60.f1c40f28.js"><link rel="prefetch" href="/blog/assets/js/61.67ea868d.js"><link rel="prefetch" href="/blog/assets/js/62.d571e5d5.js"><link rel="prefetch" href="/blog/assets/js/63.88804b5d.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.626dd732.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link"><img src="/blog/logo.png" alt="赛赛的空间" class="logo"> <span class="site-name can-hide">赛赛的空间</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">我的文章</a></div><div class="nav-item"><a href="/blog/good-writings.html" class="nav-link">阅读的好文</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">记录</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/linux.html" class="nav-link">Linux</a></li><li class="dropdown-item"><!----> <a href="/blog/webkit.html" class="nav-link">Webkit</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/zhaosaisai" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">我的文章</a></div><div class="nav-item"><a href="/blog/good-writings.html" class="nav-link">阅读的好文</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">记录</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/linux.html" class="nav-link">Linux</a></li><li class="dropdown-item"><!----> <a href="/blog/webkit.html" class="nav-link">Webkit</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/zhaosaisai" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1>iptables学习</h1> <h2 id="概述"><a href="#概述" aria-hidden="true" class="header-anchor">#</a> 概述</h2> <p><code>iptables</code>的全称是<code>netfilter/iptables</code>，是<code>ip</code>信息包过滤系统，由<code>netfilter</code>和<code>iptables</code>两部分组成。</p> <p><code>netfilter</code>组件也称为内核空间<code>kernelspace</code>，它是内核的一部分，由一些信息包过滤表组成，这些表包含内核用来控制信息包过滤处理的规则集。</p> <p><code>iptables</code>其实是一种工具，也称为用户控件<code>userspace</code>，它使插入、修改和删除信息包过滤表中的规则变得容易。</p> <p><code>netfilter/iptables</code>也简称为<code>iptables</code>。<code>iptables</code>是基于内核的防火墙，功能很强大。<code>iptables</code>中内置了<code>filter</code>，<code>nat</code>，<code>mangle</code>三张表。三张表的任一处变更都会立即生效，不需要重启。</p> <ul><li><p><code>filter</code>表：负责过滤数据包，包括的规则链有<code>INPUT</code>，<code>OUTPUT</code>和<code>FORWARD</code>。</p></li> <li><p><code>nat</code>表：涉及到网络地址转换，包括的规则链有<code>PREROUTING</code>，<code>POSTROUTING</code>和<code>OUTPUT</code>。</p></li> <li><p><code>mangle</code>表：主要用在修改数据包内容上，用来给数据包打个标识，默认的规则链有<code>INPUT</code>，<code>OUTPUT</code>，<code>FORWARD</code>和<code>PREROUTING</code>，<code>POSTROUTING</code>。</p></li></ul> <p><code>iptables</code>涉及<strong>三表</strong>和<strong>五链</strong>，三表就是上面提到的，五链如下：</p> <ul><li><code>INPUT</code>：匹配流入到本机的数据包，也就是目标<code>ip</code>地址是本机</li> <li><code>OUTPUT</code>：匹配从本机流出的数据包，一般不需要作配置</li> <li><code>FORWARD</code>：匹配从本机进行转发的数据包，目标<code>ip</code>地址不是本机。</li> <li><code>PREROUTING</code>：用来修改目的地址，用来做<code>DNAT</code>。比如可以把内网中的<code>80</code>端口，映射到路由器外网端口上。</li> <li><code>POSTROUTING</code>：用来修改源地址，做<code>SNAT</code>。比如内网通过路由器<code>NAT</code>转换功能实现内网机器通过一个公网<code>IP</code>地址上网。</li></ul> <blockquote><p>表 -&gt; 链 -&gt; 规则</p></blockquote> <p><strong>iptable过滤封包流程</strong></p> <p><img src="'/blog/iptables1.png'" alt></p> <p>数据包可以分为两类：</p> <ul><li>发给防火墙本身的数据包*(数据包流向用红色线表示)*</li> <li>需要经过防火墙转发的数据包*(数据包流向用蓝色线表示)*</li></ul> <p><code>iptables</code>中的三个表是有优先顺序的，一般顺序优先规则如下</p> <p><code>raw &gt; mangle &gt; nat &gt; filter</code></p> <p>规则链间的匹配顺序</p> <ul><li>入站数据：<code>PREROUTING</code>, <code>INPUT</code></li> <li>出站数据：<code>OUTPUT</code>, <code>POSTROUTING</code></li> <li>转发数据：<code>PREROUTING</code>, <code>FORWARD</code>, <code>POSTROUTING</code></li></ul> <p>链内的匹配顺序</p> <ul><li>自上而下按照顺序依次进行检查，找到相匹配的规则即停止</li> <li>如果在链内找不到相匹配的规则，则按照该链的默认策略处理（未修改的情况下，默认策略是允许）</li></ul> <h2 id="iptables"><a href="#iptables" aria-hidden="true" class="header-anchor">#</a> iptables</h2> <p>查看本机是否安装了防火墙<code>iptables</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>rpm -qf <span class="token variable"><span class="token variable">`</span><span class="token function">which</span> iptables<span class="token variable">`</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><code>iptables</code>的配置文件一般保存在</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>/etc/sysconfig/iptables
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>配置文件的内容可能如下</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># Generated by iptables-save v1.4.7 on Sat Jul 21 09:26:53 2018</span>
+*filter
+:INPUT ACCEPT <span class="token punctuation">[</span>0:0<span class="token punctuation">]</span>
+:FORWARD ACCEPT <span class="token punctuation">[</span>0:0<span class="token punctuation">]</span>
+:OUTPUT ACCEPT <span class="token punctuation">[</span>5:1020<span class="token punctuation">]</span>
+-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
+-A INPUT -j REJECT --reject-with icmp-host-prohibited
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+COMMIT
+<span class="token comment"># Completed on Sat Jul 21 09:26:53 2018</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p><code>iptables</code>启动和重启</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>/etc/init.d/iptables start
+/etc/init.d/iptables restart
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>检查开机是否启动了</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">chkconfig</span> --list iptables
+
+<span class="token comment"># iptables       	0:关闭	1:关闭	2:关闭	3:关闭	4:关闭	5:关闭	6:关闭</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><code>iptables</code>命令的语法格式</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>iptables <span class="token punctuation">[</span>-t 表名<span class="token punctuation">]</span> 管理选项 <span class="token punctuation">[</span>链名<span class="token punctuation">(</span>规则名<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>条件匹配<span class="token punctuation">]</span> <span class="token punctuation">[</span>-j 目标动作或者跳转<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>不指定表名的时候，默认是<code>filter</code>表</li> <li>不指定链名的时候，默认是该表内的所有链</li> <li>除非设置规则链的缺省策略，否则需要指定匹配条件</li></ul> <p><img src="/blog/iptables2.png" alt></p> <h3 id="iptables命令使用"><a href="#iptables命令使用" aria-hidden="true" class="header-anchor">#</a> iptables命令使用</h3> <p><code>iptables</code>的基本使用方法如下</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>iptables <span class="token punctuation">[</span>-t 要操作的表<span class="token punctuation">]</span>
+  <span class="token operator">&lt;</span>操作命令<span class="token operator">&gt;</span>
+  <span class="token punctuation">[</span>要操作的链<span class="token punctuation">]</span>
+  <span class="token punctuation">[</span>规则号码<span class="token punctuation">]</span>
+  <span class="token punctuation">[</span>匹配条件<span class="token punctuation">]</span>
+  <span class="token punctuation">[</span>-j 匹配到以后的动作<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>操作命令</strong></p> <ul><li><code>-A &lt;链名&gt;</code>：<code>APPEND</code>，追加一条规则，放到最后。</li></ul> <p>比如，在<code>filter</code>表的<code>INPUT</code>链里追加一条规则（作为最后一条规则），匹配所有访问本机<code>IP</code>的数据包，匹配到就丢弃</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 这个规则就是拒绝所有人访问服务器</span>
+iptables -t filter -A INPUT -j DROP
+
+<span class="token comment"># -j DROP 表示丢弃包</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li><code>-D &lt;链名&gt;&lt;规则名称|具体规则内容&gt;</code>：<code>DELETE</code>，删除一条规则</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 删除 filter表中的INPUT 链对应的弟一条规则</span>
+iptables -D INPUT 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 删除filter表中 INPUT链中内容为&quot;-s 192.168.144.129 -j DROP&quot;的规则</span>
+iptables -t filter -D INPUT -s 192.168.144.129 -j DROP
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>删除规则的时候有一些注意事项</p> <ol><li>如果规则列表中有多条相同的规则，按内容匹配删除序号最小的一条</li> <li>按照号码匹配删除的时候，确保规则号码 &lt;= 已有规则数，否则报错</li> <li>按照内容匹配删除的时候，确保规则存在，否则报错</li></ol> <ul><li><code>-P &lt;链名&gt; &lt;动作&gt;</code>：<code>POLICY</code>，设置某个链的默认规则</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>iptables -L <span class="token comment"># 查看默认规则</span>
+
+<span class="token comment"># 设置默认规则为DROP</span>
+iptables -t filter -P INPUT DROP
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><code>-F &lt;链名&gt;</code>：<code>FLUSH</code>，清空规则</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 清空INPUT链的规则</span>
+iptables -t filter -F INPUT
+
+<span class="token comment"># 清除filter表中所有链上的规则</span>
+iptables -F
+
+<span class="token comment"># 清除nat表中链上所有的规则</span>
+iptables -t NAT -F
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>注意</strong></p> <ol><li><code>-F</code>仅仅是清空链中的规则，并不影响<code>-P</code>设置的默认规则</li> <li><code>-P</code> 设置了<code>DROP</code>后，使用<code>-F</code>一定要小心</li> <li>如果不写链名称，则清空所有链上的规则。</li></ol> <ul><li><code>-[xvf]L &lt;链名&gt;</code>: <code>LIST</code>列出所有的规则</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 列出所有链的规则</span>
+iptables -L
+
+<span class="token comment"># 列出INPUT链的所有规则</span>
+iptables -L INPUT
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li><code>v</code>：显示详细信息</li> <li><code>x</code>：在<code>v</code>的基础上，禁止自动单位换算</li> <li><code>n</code>：只显示<code>IP</code>地址和端口号码，不显示域名和服务名称</li></ul> <p><strong>匹配条件</strong></p> <ol><li>流入、流出的接口（<code>-i</code>，<code>-o</code>）</li></ol> <ul><li><code>-i &lt;匹配数据进入的网络接口&gt;</code>：这个参数主要用于<code>nat</code>表，比如目标地址转换</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 匹配是否从网络接口 eth0进来的数据包</span>
+-i eth0
+<span class="token comment"># 匹配是否从网络接口 eth0流出的数据包</span>
+-o eth0
+
+<span class="token comment"># 匹配是否从网络接口 ppp0进来的数据包</span>
+-i ppp0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol start="2"><li>来源、目的地址（<code>-s</code>, <code>-d</code>）</li></ol> <ul><li><code>-s &lt;匹配来源地址&gt;</code>：可以是ip, net, domain，也可以为空（表示全部）</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 匹配来自192.168.0.1的数据包</span>
+-s 192.168.0.1
+
+<span class="token comment"># 匹配来自于192.168.0.1/24网段的数据包</span>
+-s 192.168.0.1/24
+
+<span class="token comment"># 匹配即将去往192.168.22.214的数据包</span>
+-d 192.168.22.214
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ol start="3"><li>协议类型（<code>-p</code>）</li></ol> <ul><li><code>-p &lt;协议类型&gt;</code>：可以是tcp，udp，icmp等，也可以为空</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 匹配tcp相关的数据包</span>
+-p tcp
+<span class="token comment"># 匹配udp相关的协议</span>
+-p udp
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="4"><li>来源、目的端口（<code>--sport</code>, <code>--dport</code>）</li></ol> <ul><li><code>--sport &lt;匹配源端口&gt;</code>：可以是个别端口，也可以是端口范围</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 匹配目标端口是 80 的数据包</span>
+--dport 80 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li><code>--dport &lt;匹配目的端口&gt;</code>：可以是个别端口，也可以是端口范围</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 匹配源端口是1000的数据包</span>
+--sport 1000 
+
+<span class="token comment"># 匹配源端口是1000-3000的数据包</span>
+--sport 1000:3000
+
+<span class="token comment"># 匹配源端口在3000以下的数据包</span>
+--sport :3000
+
+<span class="token comment"># 匹配源端口是1000以上的数据包</span>
+--sport 1000:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><blockquote><p>--sport 和 --dport必须和-p一起使用</p></blockquote> <p>比如</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 匹配网络中目的端口是53的udp协议数据包</span>
+-p udp --dport 53
+
+<span class="token comment"># 匹配来自 192.168.0.1 访问 www.zhaosaisai.com:80的数据包</span>
+-s 192.168.0.1 -d www.zhaosaisai.com -p tcp --dport 80
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>动作（处理方式）</strong></p> <ul><li><code>ACCEPT</code>：接收数据包</li> <li><code>DROP</code>：直接将数据包丢弃（不给对方任何回应）</li> <li><code>REJECT</code>：拒绝数据包（拒绝后，给对端一个回应）</li> <li><code>SNAT</code>：源地址转换</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>-j SNAT --to IP<span class="token punctuation">[</span>-IP<span class="token punctuation">]</span><span class="token punctuation">[</span>:端口-端口<span class="token punctuation">]</span><span class="token punctuation">(</span>nat 表上的POSTROUTING<span class="token punctuation">)</span>
+
+源地址转换，SNAT支持转换到单IP地址，也支持转换到一组IP地址
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><code>DNAT</code>：端口映射</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>-j DNAT --to IP<span class="token punctuation">[</span>-IP<span class="token punctuation">]</span><span class="token punctuation">[</span>:端口-端口<span class="token punctuation">]</span><span class="token punctuation">(</span>nat 表上的PREROUTING<span class="token punctuation">)</span>
+
+目标地址转换，DNAT支持转换到单IP地址，也支持转换到一组IP地址
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><code>MASQUERADE</code>：伪装一个公网<code>ip</code>地址</li></ul> <p>下面是这些处理方式的使用方式</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 接受，允许数据包通过本链访问而不拦截它</span>
+-j ACCEPT
+
+<span class="token comment"># 从INPUT进来的数据包都是接受的</span>
+<span class="token comment"># 也就是允许任何人访问</span>
+iptables -A INPUT -j ACCEPT
+
+<span class="token comment"># 阻止转发 是 192.168.20.39 的数据包访问本机</span>
+iptables -A FORWARD -s 192.168.20.39 -j DROP
+
+<span class="token comment"># 将内网192.168.22.214的原地址转换为公网ip 1.1.1.1 用于NAT</span>
+iptables -t nat -A POSTROUTING -s 192.168.22.214 -j SNAT --to 1.1.1.1
+
+<span class="token comment"># 把从etch0进来的数据包目的地址改为192.168.22.214</span>
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to 192.168.22.214
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="实例"><a href="#实例" aria-hidden="true" class="header-anchor">#</a> 实例</h2> <p><strong>1. 使用iptables防火墙保护web服务器</strong></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 首先对网路lo进行配置</span>
+iptables -A INPUT -i lo -j ACCEPT
+<span class="token comment"># 打开22和80端口（一次打开多个）</span>
+<span class="token comment"># iptables -A INPUT -p tcp -m multiport --dport 22,80 -j ACCEPT</span>
+
+<span class="token comment"># 打开22和80端口（分多次打开）</span>
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+<span class="token comment"># 对衍生的和已经建立的连接放行</span>
+iptables -A INPUT -m state -state RELATED,ESTABLISHED -j ACCEPT
+
+<span class="token comment"># 其它的数据默认都drop</span>
+iptables -P INPUT DROP
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong>2. 拒绝访问服务器本身和拒绝通过服务器访问别的机器</strong></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 拒绝一个ip地址的访问</span>
+iptables -A INPUT -s 192.168.2.1 -j DROP
+<span class="token comment"># 防止通过本机转发</span>
+iptables -A FORWARD -s 192.168.2.1 -j DROP
+<span class="token comment"># 禁止这个机器上网</span>
+iptables -A OUTPUT -s 192.168.2.1 -j DROP
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/blog/assets/js/40.866dcfbb.js" defer></script><script src="/blog/assets/js/app.fe1411be.js" defer></script>
+  </body>
+</html>
