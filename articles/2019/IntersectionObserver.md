@@ -4,7 +4,7 @@
 
 `IntersectionObserver`也被称为**交集检测器**，即当`target(被监测元素)`出现在`root(target的祖先元素，默认是document)`的视窗中，我们能感知。
 
-![]('/blog/intersectionObserver1.png')
+![](/blog/intersectionObserver1.png)
 
 `IntersectionObserver`的使用非常简单，因为它涉及到的`api`很少，常用的也就那两三个。但在某些特殊的业务场景下，其功能却是十分强大的。比如，曝光监测、懒加载，无限滚动加载等场景的应用十分合适，后面我们会详细讲解。
 
@@ -162,7 +162,7 @@ newRect.height = newRect.bottom - newRect.top;
 
 其中`newRect`就是计算后的`root`区域的大小
 
-![]('/blog/intersectionObserver3.png')
+![](/blog/intersectionObserver3.png)
 
 ```js
 const target = document.querySelector('.cube')
@@ -182,7 +182,7 @@ observer.observe(target)
 
 下面很清晰的表示了`threshold`的作用
 
-![]('/blog/intersectionObserver2.png')
+![](/blog/intersectionObserver2.png)
 
 ```js
 const target = document.querySelector('.cube')
@@ -204,7 +204,7 @@ observer.observe(target)
 
 我们创建`IntersectionObserver`实例的时候，传递了一个回调函数作为第一个参数。这个函数在`target`和`root`元素的交集状态发生变化的时候会被调用。这个函数的参数是一个由`IntersectionObserverEntry`实例组成的数组。`IntersectionObserverEntry`实例有如下的属性
 
-![]('/blog/intersectionObserver4.png')
+![](/blog/intersectionObserver4.png)
 
 其中`isIntersecting`是我们最常使用的几个属性
 
@@ -290,7 +290,7 @@ createElements(100)
 
 `IntersectionObserver`的兼容性并不是很好，目前大概只有`78%`的浏览器支持。
 
-![]('/blog/intersectionObserver5.png')
+![](/blog/intersectionObserver5.png)
 
 当然，好用的东西一般不能直接使用。为了能够在大多数的浏览器中使用，我们一般会引入其`polyfill`。后面会写一个对其`polyfill`源码进行解读的文章。
 
