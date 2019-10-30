@@ -1,6 +1,6 @@
 # IntersectionObserver-polyfill解析
 
-在介绍[IntersectionObserver](https://zhaosaisai.com/blog/2019/IntersectionObserver.html)的时候曾提到过这个接口目前使用的最大问题就是浏览器的兼容性问题。所以，我们平时在使用的时候切记不要忘记判断这个API在我们的宿主环境中是否存在。如果不存在，我们可以通过引入其`polyfill`来作部分功能的兼容。
+在介绍[IntersectionObserver](http://wiki.51.nb/pages/viewpage.action?pageId=216662786)的时候曾提到过这个接口目前使用的最大问题就是浏览器的兼容性问题。所以，我们平时在使用的时候切记不要忘记判断这个API在我们的宿主环境中是否存在。如果不存在，我们可以通过引入其`polyfill`来作部分功能的兼容。
 
 `IntersectionObserver-polyfill`是`w3c`官方创建的[https://github.com/w3c/IntersectionObserver](https://github.com/w3c/IntersectionObserver)。我们可以在浏览器不支持`IntersectionObserver`的情况下引入它。当然，你也可以直接引入它，其内部也只会在浏览器不支持其的情况下进行`polyfill`。
 
@@ -576,7 +576,7 @@ function computeRectIntersection(rect1, rect2) {
 
 我们将这段代码用下面的图片来表示，就能看出它到底在做啥
 
-![](/blog/intersection-polyfill1.png)
+![](https://51nbimg.u51.com/9df96dbd1fe540e4b00e4a6308f8b948.png)
 
 上图中红色的线段就是相交区域的`上，下，左，右`的长度。所以，相交区域的大小就是图中橙色实心部分的大小。如果`target`位于`root`的区域外，则表示`width`或者`height`至少有一个`<=0`。那么计算出来的相交区域的大小也就为`0`。
 

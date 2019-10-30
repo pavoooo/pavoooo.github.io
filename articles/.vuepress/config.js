@@ -22,7 +22,7 @@ module.exports = {
             { text: '记录', items: [{
                 text: 'Linux', link: '/linux.html',
             }, {
-                text: 'Webkit', link: '/webkit.html',
+                text: '翻译', link: '/translate.html',
             }] },
             { text: 'Github', link: 'https://github.com/zhaosaisai' }
         ],
