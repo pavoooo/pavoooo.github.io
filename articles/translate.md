@@ -8,3 +8,4 @@
 - [Add HTTP Headers (TLDR: Use -H argument)](/curl/add-http-headers.html)
 - [Change the User Agent (TLDR: Use -A argument)](/curl/change-the-user-agent.html)
 - [Set Cookies (TLDR: Use -b name=value argument)](/curl/set-cookies.html)
+- [Add a Referrer (TLDR: Use -e argument)](/curl/add-a-referrer.html)
