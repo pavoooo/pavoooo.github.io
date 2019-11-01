@@ -2,6 +2,6 @@
 
 cd ./articles
 
-mv *.png ./.vuepress/public/linux-imgs
+mv *.png ./.vuepress/public
 
 cd -
