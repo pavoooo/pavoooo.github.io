@@ -17,3 +17,4 @@
 - [Make Curl Silent (TLDR: Use -s argument)](/curl/make-curl-silent.html)
 - [Save the Response to a File (TLDR: Use -o argument)](/curl/save-the-response-to-a-file.html)
 - [Make Curl Slow (TLDR: Use --limit-rate argument)](/curl/make-curl-slow.html)
+- [Debug Curl Requests (TLDR: Use -v or --trace arguments)](/curl/debug-curl-requests.html)
