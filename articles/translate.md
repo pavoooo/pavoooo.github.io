@@ -15,3 +15,5 @@
 - [Use a Proxy (TLDR: Use -x argument)](/curl/use-a-proxy.html)
 - [Ignore the SSL Certificate (TLDR: Use -k argument)](/curl/ignore-the-ssl-certificate.html)
 - [Make Curl Silent (TLDR: Use -s argument)](/curl/make-curl-silent.html)
+- [Save the Response to a File (TLDR: Use -o argument)](/curl/save-the-response-to-a-file.html)
+- [Make Curl Slow (TLDR: Use --limit-rate argument)](/curl/make-curl-slow.html)
