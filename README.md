@@ -1,5 +1,8 @@
 # My Articles
 ## 2019
+- :book: [axios揭密--拦截器的实现原理](https://zhaosaisai.com/blog/2019/axios揭密--拦截器的实现原理.html)
+- :book: [axios揭密--axios是怎么兼容浏览器和Nodejs的](https://zhaosaisai.com/blog/2019/axios揭密--axios是怎么兼容浏览器和Nodejs的.html)
+- :book: [axios解密--axios是什么](https://zhaosaisai.com/blog/2019/axios解密--axios是什么.html)
 - :book: [webpack是怎么加载异步资源的](https://zhaosaisai.com/blog/2019/webpack是怎么加载异步资源的.html)
 - :book: [翻译：Curl Cookbook](https://zhaosaisai.com/blog/translate.html)
 - :book: [几个关于DOM树生成问题的研究](https://zhaosaisai.com/blog/2019/几个关于DOM树生成问题的研究.html)
@@ -58,4 +61,4 @@
 - :book: [react-start到co源码系列二](https://zhaosaisai.com/blog/2017/react-start到co源码系列二.html)
 - :book: [react-start到co源码系列一](https://zhaosaisai.com/blog/2017/react-start到co源码系列一.html)
 
-> Updated by saisai on 2019-11-21 10:09:23 
+> Updated by saisai on 2019-11-24 14:36:27 
