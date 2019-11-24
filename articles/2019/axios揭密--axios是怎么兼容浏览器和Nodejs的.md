@@ -318,7 +318,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 };
 ```
 
-这个函数主要是对传入的`error`对象进行增强，增加了一些额外的错误信息。同时对`toJSON`方法进行重写，这样能够在对`error`进行`JSON.stringify`的时候显示更多的信息。
+这个函数主要是对传入的`error`对象进行增强，增加了一些额外的错误信息。同时对`toJSON`方法进行重写，所以你可以通过调用`error.toJSON`来获取更详细的错误信息。
 
 上面就是实现`adapter`一些注意事项。`Nodejs`端的`adapter`实现和这相似。这里我们就不多介绍，后面再分析其实现的时候会详细介绍。
 

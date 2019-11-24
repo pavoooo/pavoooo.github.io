@@ -1,5 +1,6 @@
 # My Articles
 ## 2019
+- :book: [axios揭密--axios是怎么取消请求的](/2019/axios揭密--axios是怎么取消请求的.html)
 - :book: [axios揭密--拦截器的实现原理](/2019/axios揭密--拦截器的实现原理.html)
 - :book: [axios揭密--axios是怎么兼容浏览器和Nodejs的](/2019/axios揭密--axios是怎么兼容浏览器和Nodejs的.html)
 - :book: [axios解密--axios是什么](/2019/axios解密--axios是什么.html)
