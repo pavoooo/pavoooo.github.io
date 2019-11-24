@@ -3,7 +3,7 @@
 - :book: [axios揭密--axios是怎么取消请求的](/2019/axios揭密--axios是怎么取消请求的.html)
 - :book: [axios揭密--拦截器的实现原理](/2019/axios揭密--拦截器的实现原理.html)
 - :book: [axios揭密--axios是怎么兼容浏览器和Nodejs的](/2019/axios揭密--axios是怎么兼容浏览器和Nodejs的.html)
-- :book: [axios解密--axios是什么](/2019/axios解密--axios是什么.html)
+- :book: [axios揭密--axios是什么](/2019/axios揭密--axios是什么.html)
 - :book: [webpack是怎么加载异步资源的](/2019/webpack是怎么加载异步资源的.html)
 - :book: [翻译：Curl Cookbook](/translate.html)
 - :book: [几个关于DOM树生成问题的研究](/2019/几个关于DOM树生成问题的研究.html)
