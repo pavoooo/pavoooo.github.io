@@ -1,5 +1,6 @@
 # My Articles
 ## 2019
+- :book: [业务组件jest测试总结](https://zhaosaisai.com/blog/2019/业务组件jest测试总结.html)
 - :book: [axios揭密--axios是怎么取消请求的](https://zhaosaisai.com/blog/2019/axios揭密--axios是怎么取消请求的.html)
 - :book: [axios揭密--拦截器的实现原理](https://zhaosaisai.com/blog/2019/axios揭密--拦截器的实现原理.html)
 - :book: [axios揭密--axios是怎么兼容浏览器和Nodejs的](https://zhaosaisai.com/blog/2019/axios揭密--axios是怎么兼容浏览器和Nodejs的.html)
@@ -62,4 +63,4 @@
 - :book: [react-start到co源码系列二](https://zhaosaisai.com/blog/2017/react-start到co源码系列二.html)
 - :book: [react-start到co源码系列一](https://zhaosaisai.com/blog/2017/react-start到co源码系列一.html)
 
-> Updated by saisai on 2019-11-24 21:30:17 
+> Updated by saisai on 2019-12-5 10:28:48 
