@@ -18,6 +18,7 @@ module.exports = {
         },
         nav: [
             { text: '我的文章', link: '/' },
+            { text: '前端攻坚战', link: '/dive-into-code.html' },
             { text: '阅读的好文', link: '/good-writings.html' },
             { text: '记录', items: [{
                 text: 'Linux', link: '/linux.html',
