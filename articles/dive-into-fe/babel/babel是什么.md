@@ -1,5 +1,8 @@
 # Babel是什么
 
+[[toc]]
+
+
 ## Babel简介
 
 `Babel`是一个`Javascript`编译器。`Babel`也是一个工具链，主要用于将新特性语法`Ecmascript2015+`版本的代码转换为向后兼容的`Javascript`语法，以便能够在低版本的浏览器或其它环境中运行。

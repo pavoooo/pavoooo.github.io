@@ -1,5 +1,8 @@
 # axios揭密--axios是怎么取消请求的
 
+[[toc]]
+
+
 `axios`可以使用`cancel token`来取消一个请求。详细的使用文档可以参考[https://github.com/axios/axios#cancellation](https://github.com/axios/axios#cancellation)。下面我们主要看一下这个功能是怎么实现的。
 
 下面是一个使用`cancel token`取消请求的一个例子

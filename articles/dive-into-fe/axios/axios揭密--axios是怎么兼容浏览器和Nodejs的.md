@@ -1,5 +1,8 @@
 # axios揭密--axios是怎么兼容浏览器和Nodejs的
 
+[[toc]]
+
+
 `axios`一个比较好的特性就是同时支持浏览器和`Nodejs`端。所以，下面的代码在浏览器和`Nodejs`端都适用。
 
 ```js

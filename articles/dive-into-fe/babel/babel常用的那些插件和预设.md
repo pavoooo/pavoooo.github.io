@@ -1,5 +1,8 @@
 # babel常用的那些插件和预设
 
+[[toc]]
+
+
 `babel`官方提供了很多的插件和预设来编译`javascript`。下面我们就来看一些在日常的开发中比较常用的那些插件和预设。
 
 ## @babel/preset-env
