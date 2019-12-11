@@ -17,3 +17,4 @@
 - :green_book: [babel常用的那些插件和预设](/dive-into-fe/babel/babel常用的那些插件和预设.html)
 - :green_book: [babel配置选项详解](/dive-into-fe/babel/babel配置选项.html)
 - :green_book: [babel配置文件研究](/dive-into-fe/babel/babel配置文件.html)
+- :green_book: [babel的那些模块](/dive-into-fe/babel/babel的那些模块.html)
