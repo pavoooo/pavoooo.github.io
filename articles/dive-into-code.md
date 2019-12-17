@@ -19,3 +19,4 @@
 - :green_book: [babel配置文件研究](/dive-into-fe/babel/babel配置文件.html)
 - :green_book: [babel的那些模块](/dive-into-fe/babel/babel的那些模块.html)
 - :green_book: [Node和NodePath](/dive-into-fe/babel/Node和NodePath.html)
+- :green_book: [babel插件开发](/dive-into-fe/babel/babel插件开发.html)
