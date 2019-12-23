@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>pwd和ls命令 | 赛赛的空间</title>
+    <meta name="description" content="赵赛赛个人博客，关注前端技术，后端技术，喜欢编程。每天进步一点点就好啦！">
+    <link rel="icon" type="image/x-icon" href="/blog/favicon.ico">
+  <script type="text/javascript" src="/blog/bdtj.js"></script>
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.626dd732.css" as="style"><link rel="preload" href="/blog/assets/js/app.e70cf75d.js" as="script"><link rel="preload" href="/blog/assets/js/95.338c60c6.js" as="script"><link rel="prefetch" href="/blog/assets/js/57.ca641bdf.js"><link rel="prefetch" href="/blog/assets/js/2.285762ea.js"><link rel="prefetch" href="/blog/assets/js/3.77a6a052.js"><link rel="prefetch" href="/blog/assets/js/4.6daa2d0b.js"><link rel="prefetch" href="/blog/assets/js/5.f169fbdc.js"><link rel="prefetch" href="/blog/assets/js/6.8e18dc59.js"><link rel="prefetch" href="/blog/assets/js/7.90d2c0ad.js"><link rel="prefetch" href="/blog/assets/js/8.c79e2e52.js"><link rel="prefetch" href="/blog/assets/js/9.cbe6d4cd.js"><link rel="prefetch" href="/blog/assets/js/10.49f5b448.js"><link rel="prefetch" href="/blog/assets/js/11.49fcc2bd.js"><link rel="prefetch" href="/blog/assets/js/12.d3602b67.js"><link rel="prefetch" href="/blog/assets/js/13.70b305bb.js"><link rel="prefetch" href="/blog/assets/js/14.32cf3f5c.js"><link rel="prefetch" href="/blog/assets/js/15.21ca5469.js"><link rel="prefetch" href="/blog/assets/js/16.80a1f156.js"><link rel="prefetch" href="/blog/assets/js/17.d510fcbf.js"><link rel="prefetch" href="/blog/assets/js/18.404c8eef.js"><link rel="prefetch" href="/blog/assets/js/19.af3cd491.js"><link rel="prefetch" href="/blog/assets/js/20.2b570a83.js"><link rel="prefetch" href="/blog/assets/js/21.5632325c.js"><link rel="prefetch" href="/blog/assets/js/22.41f8f69f.js"><link rel="prefetch" href="/blog/assets/js/23.0cbb2dd3.js"><link rel="prefetch" href="/blog/assets/js/24.20915592.js"><link rel="prefetch" href="/blog/assets/js/25.3f717d25.js"><link rel="prefetch" href="/blog/assets/js/26.da439741.js"><link rel="prefetch" href="/blog/assets/js/27.ed820e7d.js"><link rel="prefetch" href="/blog/assets/js/28.4678c51e.js"><link rel="prefetch" href="/blog/assets/js/29.ac6d4ab9.js"><link rel="prefetch" href="/blog/assets/js/30.2b4d49d8.js"><link rel="prefetch" href="/blog/assets/js/31.844ba214.js"><link rel="prefetch" href="/blog/assets/js/32.76f67711.js"><link rel="prefetch" href="/blog/assets/js/33.759543b5.js"><link rel="prefetch" href="/blog/assets/js/34.565e062e.js"><link rel="prefetch" href="/blog/assets/js/35.9d0af171.js"><link rel="prefetch" href="/blog/assets/js/36.974734cb.js"><link rel="prefetch" href="/blog/assets/js/37.30fe7806.js"><link rel="prefetch" href="/blog/assets/js/38.f02db851.js"><link rel="prefetch" href="/blog/assets/js/39.e853f26a.js"><link rel="prefetch" href="/blog/assets/js/40.9fbc2d44.js"><link rel="prefetch" href="/blog/assets/js/41.f6a12994.js"><link rel="prefetch" href="/blog/assets/js/42.26bc959b.js"><link rel="prefetch" href="/blog/assets/js/43.ccfcd9bb.js"><link rel="prefetch" href="/blog/assets/js/44.de8e1894.js"><link rel="prefetch" href="/blog/assets/js/45.c6c28af4.js"><link rel="prefetch" href="/blog/assets/js/46.481038a6.js"><link rel="prefetch" href="/blog/assets/js/47.c320e735.js"><link rel="prefetch" href="/blog/assets/js/48.ce5eaebd.js"><link rel="prefetch" href="/blog/assets/js/49.3a63d70f.js"><link rel="prefetch" href="/blog/assets/js/50.ec9a78ac.js"><link rel="prefetch" href="/blog/assets/js/51.08e6972d.js"><link rel="prefetch" href="/blog/assets/js/52.5335e403.js"><link rel="prefetch" href="/blog/assets/js/53.5a23b714.js"><link rel="prefetch" href="/blog/assets/js/54.da2bcf00.js"><link rel="prefetch" href="/blog/assets/js/55.43fd80de.js"><link rel="prefetch" href="/blog/assets/js/56.628553dc.js"><link rel="prefetch" href="/blog/assets/js/58.074d0ee1.js"><link rel="prefetch" href="/blog/assets/js/59.268149fe.js"><link rel="prefetch" href="/blog/assets/js/60.8c075f16.js"><link rel="prefetch" href="/blog/assets/js/61.3b3b3b05.js"><link rel="prefetch" href="/blog/assets/js/62.abd83640.js"><link rel="prefetch" href="/blog/assets/js/63.12b89e95.js"><link rel="prefetch" href="/blog/assets/js/64.43a045ad.js"><link rel="prefetch" href="/blog/assets/js/65.2a027066.js"><link rel="prefetch" href="/blog/assets/js/66.36d8a87b.js"><link rel="prefetch" href="/blog/assets/js/67.6d82b982.js"><link rel="prefetch" href="/blog/assets/js/68.0f7d66ca.js"><link rel="prefetch" href="/blog/assets/js/69.f153143f.js"><link rel="prefetch" href="/blog/assets/js/70.4700f3aa.js"><link rel="prefetch" href="/blog/assets/js/71.89dabbc7.js"><link rel="prefetch" href="/blog/assets/js/72.d7454962.js"><link rel="prefetch" href="/blog/assets/js/73.33431aef.js"><link rel="prefetch" href="/blog/assets/js/74.d7c17861.js"><link rel="prefetch" href="/blog/assets/js/75.840e70a8.js"><link rel="prefetch" href="/blog/assets/js/76.c312db82.js"><link rel="prefetch" href="/blog/assets/js/77.15c8b051.js"><link rel="prefetch" href="/blog/assets/js/78.447f19fa.js"><link rel="prefetch" href="/blog/assets/js/79.255edba0.js"><link rel="prefetch" href="/blog/assets/js/80.b5093fb6.js"><link rel="prefetch" href="/blog/assets/js/81.2856ccbe.js"><link rel="prefetch" href="/blog/assets/js/82.5df590df.js"><link rel="prefetch" href="/blog/assets/js/83.9da35519.js"><link rel="prefetch" href="/blog/assets/js/84.cb49186f.js"><link rel="prefetch" href="/blog/assets/js/85.440ec2ad.js"><link rel="prefetch" href="/blog/assets/js/86.281865b8.js"><link rel="prefetch" href="/blog/assets/js/87.36639516.js"><link rel="prefetch" href="/blog/assets/js/88.a129d078.js"><link rel="prefetch" href="/blog/assets/js/89.6ec64327.js"><link rel="prefetch" href="/blog/assets/js/90.c4ac5c36.js"><link rel="prefetch" href="/blog/assets/js/91.bf1849f2.js"><link rel="prefetch" href="/blog/assets/js/92.8d2405b3.js"><link rel="prefetch" href="/blog/assets/js/93.b9032fb1.js"><link rel="prefetch" href="/blog/assets/js/94.f9e71c29.js"><link rel="prefetch" href="/blog/assets/js/96.3992d5b5.js"><link rel="prefetch" href="/blog/assets/js/97.4be10832.js"><link rel="prefetch" href="/blog/assets/js/98.2a3208f8.js"><link rel="prefetch" href="/blog/assets/js/99.9b4027ef.js"><link rel="prefetch" href="/blog/assets/js/100.e78d84a7.js"><link rel="prefetch" href="/blog/assets/js/101.486db6f1.js"><link rel="prefetch" href="/blog/assets/js/102.ca38d288.js"><link rel="prefetch" href="/blog/assets/js/103.9f65b876.js"><link rel="prefetch" href="/blog/assets/js/104.eb06d90c.js"><link rel="prefetch" href="/blog/assets/js/105.08a7d372.js"><link rel="prefetch" href="/blog/assets/js/106.3d13b1f3.js"><link rel="prefetch" href="/blog/assets/js/107.5a5a6c41.js"><link rel="prefetch" href="/blog/assets/js/108.44356dca.js"><link rel="prefetch" href="/blog/assets/js/109.59dca4a5.js"><link rel="prefetch" href="/blog/assets/js/110.da681c49.js"><link rel="prefetch" href="/blog/assets/js/111.28c6991c.js"><link rel="prefetch" href="/blog/assets/js/112.588d0764.js"><link rel="prefetch" href="/blog/assets/js/113.5d6be48c.js"><link rel="prefetch" href="/blog/assets/js/114.6f8541dd.js"><link rel="prefetch" href="/blog/assets/js/115.5a70c30e.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.626dd732.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link"><img src="/blog/logo.png" alt="赛赛的空间" class="logo"> <span class="site-name can-hide">赛赛的空间</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">我的文章</a></div><div class="nav-item"><a href="/blog/dive-into-code.html" class="nav-link">前端攻坚战</a></div><div class="nav-item"><a href="/blog/good-writings.html" class="nav-link">阅读的好文</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">记录</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/linux.html" class="nav-link">Linux</a></li><li class="dropdown-item"><!----> <a href="/blog/translate.html" class="nav-link">翻译</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/zhaosaisai" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">我的文章</a></div><div class="nav-item"><a href="/blog/dive-into-code.html" class="nav-link">前端攻坚战</a></div><div class="nav-item"><a href="/blog/good-writings.html" class="nav-link">阅读的好文</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">记录</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/linux.html" class="nav-link">Linux</a></li><li class="dropdown-item"><!----> <a href="/blog/translate.html" class="nav-link">翻译</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/zhaosaisai" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1>pwd和ls命令</h1> <blockquote><p><code>linux</code>中一切皆文件，文件的操作都是通过命令进行</p></blockquote> <h2 id="pwd"><a href="#pwd" aria-hidden="true" class="header-anchor">#</a> pwd</h2> <p><code>pwd</code>用于显示当前的操作目录</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># pwd</span>
+/root
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="ls"><a href="#ls" aria-hidden="true" class="header-anchor">#</a> ls</h2> <p><code>ls</code>用于显示目录的内容</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">ls</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> <span class="token punctuation">[</span>args<span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># ls /</span>
+bin  boot  cgroup  dev  etc  flag_ok  home  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  selinux  srv  sys  tmp  usr  var
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># ls /root</span>
+appendonly.aof  installed     mydocker         nodes-6381.conf  nodes-6383.conf  nodes-6385.conf  study
+dump.rdb        myDataVolume  nodes-6380.conf  nodes-6382.conf  nodes-6384.conf  packages         test-changelog
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><code>ls</code>可以同时显示多个目录的内容</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># ls / /root</span>
+/:
+bin  boot  cgroup  dev  etc  flag_ok  home  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  selinux  srv  sys  tmp  usr  var
+
+/root:
+appendonly.aof  installed     mydocker         nodes-6381.conf  nodes-6383.conf  nodes-6385.conf  study
+dump.rdb        myDataVolume  nodes-6380.conf  nodes-6382.conf  nodes-6384.conf  packages         test-changelog
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="选项"><a href="#选项" aria-hidden="true" class="header-anchor">#</a> 选项</h3> <blockquote><p><code>ls</code>的选项非常多，这里只是常用的一些</p></blockquote> <h4 id="l：以行为单位显示目录或文件的详细信息"><a href="#l：以行为单位显示目录或文件的详细信息" aria-hidden="true" class="header-anchor">#</a> <code>-l</code>：以行为单位显示目录或文件的详细信息</h4> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># ls -l</span>
+total 56
+-rw-r--r-- 1 root root   92 Apr 27  2019 appendonly.aof
+-rw-r--r-- 1 root root  176 Apr 27  2019 dump.rdb
+drwxr-xr-x 3 root root 4096 Apr 27  2019 installed
+drwxr-xr-x 2 root root 4096 Nov 18 22:37 myDataVolume
+drwxr-xr-x 2 root root 4096 Nov 19 22:31 mydocker
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6380.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6381.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6382.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6383.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6384.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6385.conf
+drwxr-xr-x 3 root root 4096 Oct 12 23:42 packages
+drwxr-xr-x 3 root root 4096 Apr 21  2019 study
+drwxr-xr-x 5 root root 4096 Oct 13 00:04 test-changelog
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>第一个字符具有特定的含义</p> <ul><li><code>-</code>：表示该文件是一个普通文件</li> <li><code>d</code>：表示该文件是一个目录文件</li></ul> <h4 id="a：显示目录下的所有文件，包括隐藏文件"><a href="#a：显示目录下的所有文件，包括隐藏文件" aria-hidden="true" class="header-anchor">#</a> <code>-a</code>：显示目录下的所有文件，包括隐藏文件</h4> <blockquote><p><code>linux</code>系统中的隐藏文件以<code>.</code>开头</p></blockquote> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># ls -a</span>
+<span class="token keyword">.</span>               .bash_history  .bashrc  .dockerinit  .gemrc      installed     .node_repl_history  nodes-6382.conf  nodes-6385.conf  packages           .ssh     test-changelog
+<span class="token punctuation">..</span>              .bash_logout   .config  dump.rdb     .gitconfig  myDataVolume  nodes-6380.conf     nodes-6383.conf  .npm             .pki               study    .viminfo
+appendonly.aof  .bash_profile  .cshrc   .gem         .gnupg      mydocker      nodes-6381.conf     nodes-6384.conf  .npmrc           .rediscli_history  .tcshrc  .vscode-server
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="r：逆向排序"><a href="#r：逆向排序" aria-hidden="true" class="header-anchor">#</a> <code>-r</code>：逆向排序</h4> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># ls -lr</span>
+total 56
+drwxr-xr-x 5 root root 4096 Oct 13 00:04 test-changelog
+drwxr-xr-x 3 root root 4096 Apr 21  2019 study
+drwxr-xr-x 3 root root 4096 Oct 12 23:42 packages
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6385.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6384.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6383.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6382.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6381.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6380.conf
+drwxr-xr-x 2 root root 4096 Nov 19 22:31 mydocker
+drwxr-xr-x 2 root root 4096 Nov 18 22:37 myDataVolume
+drwxr-xr-x 3 root root 4096 Apr 27  2019 installed
+-rw-r--r-- 1 root root  176 Apr 27  2019 dump.rdb
+-rw-r--r-- 1 root root   92 Apr 27  2019 appendonly.aof
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><blockquote><p><code>-r</code>默认是以文件名进行排序的，如果你想以时间的方式进行排序，可以指定<code>-t</code>参数。<code>-t</code>就是以时间顺序显示目录信息</p></blockquote> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># ls -lrt</span>
+total 56
+drwxr-xr-x 3 root root 4096 Apr 21  2019 study
+drwxr-xr-x 3 root root 4096 Apr 27  2019 installed
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6385.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6380.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6384.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6383.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6381.conf
+-rw-r--r-- 1 root root  781 Apr 27  2019 nodes-6382.conf
+-rw-r--r-- 1 root root  176 Apr 27  2019 dump.rdb
+-rw-r--r-- 1 root root   92 Apr 27  2019 appendonly.aof
+drwxr-xr-x 3 root root 4096 Oct 12 23:42 packages
+drwxr-xr-x 5 root root 4096 Oct 13 00:04 test-changelog
+drwxr-xr-x 2 root root 4096 Nov 18 22:37 myDataVolume
+drwxr-xr-x 2 root root 4096 Nov 19 22:31 mydocker
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h4 id="r：递归显示目录下面的所有文件"><a href="#r：递归显示目录下面的所有文件" aria-hidden="true" class="header-anchor">#</a> <code>-R</code>：递归显示目录下面的所有文件</h4> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila yorkie<span class="token punctuation">]</span><span class="token comment"># ls -R</span>
+.:
+appveyor.yml  bin  CHANGELOG.md  HOOKS.md  LICENSE  package.json  README.md  src  __tests__
+
+./bin:
+install.js  uninstall.js
+
+./src:
+hooks.json  install.js  runner.js  uninstall.js  utils
+
+./src/utils:
+find-hooks-dir.js  find-parent.js  get-hook-script.js  is.js
+
+./__tests__:
+index.js
+<span class="token punctuation">[</span>root@instance-6w9riila yorkie<span class="token punctuation">]</span><span class="token comment"># ls -lR</span>
+.:
+total 36
+-rw-r--r-- 1 root root  468 Oct 26  1985 appveyor.yml
+drwxr-xr-x 2 root root 4096 Oct 12 23:56 bin
+-rw-r--r-- 1 root root 2193 Oct 26  1985 CHANGELOG.md
+-rw-r--r-- 1 root root  785 Oct 26  1985 HOOKS.md
+-rw-r--r-- 1 root root 1066 Oct 26  1985 LICENSE
+-rw-r--r-- 1 root root 1889 Oct 12 23:56 package.json
+-rw-r--r-- 1 root root  626 Oct 26  1985 README.md
+drwxr-xr-x 3 root root 4096 Oct 13 00:03 src
+drwxr-xr-x 2 root root 4096 Oct 12 23:56 __tests__
+
+./bin:
+total 8
+-rwxr-xr-x 1 root root 647 Oct 26  1985 install.js
+-rwxr-xr-x 1 root root 253 Oct 26  1985 uninstall.js
+
+./src:
+total 20
+-rw-r--r-- 1 root root  347 Oct 26  1985 hooks.json
+-rw-r--r-- 1 root root 3386 Oct 13 00:03 install.js
+-rw-r--r-- 1 root root  480 Oct 26  1985 runner.js
+-rw-r--r-- 1 root root  684 Oct 26  1985 uninstall.js
+drwxr-xr-x 2 root root 4096 Oct 12 23:56 utils
+
+./src/utils:
+total 16
+-rw-r--r-- 1 root root  700 Oct 26  1985 find-hooks-dir.js
+-rw-r--r-- 1 root root  319 Oct 26  1985 find-parent.js
+-rw-r--r-- 1 root root 2543 Oct 26  1985 get-hook-script.js
+-rw-r--r-- 1 root root  597 Oct 26  1985 is.js
+
+./__tests__:
+total 8
+-rw-r--r-- 1 root root 5331 Oct 26  1985 index.js
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br></div></div><h4 id="h：以可读的方式显示文件的大小"><a href="#h：以可读的方式显示文件的大小" aria-hidden="true" class="header-anchor">#</a> <code>-h</code>：以可读的方式显示文件的大小</h4> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila linux<span class="token punctuation">]</span><span class="token comment"># ls -lh .</span>
+total 20K
+-rw-r--r-- 1 root root   15 Dec 22 17:34 <span class="token function">file</span>
+drwxr-xr-x 2 root root 4.0K Dec 22 17:30 tmp
+-rw-r--r-- 1 root root  10K Dec 22 18:22 tmp.tar
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/blog/assets/js/95.338c60c6.js" defer></script><script src="/blog/assets/js/app.e70cf75d.js" defer></script>
+  </body>
+</html>
