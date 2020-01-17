@@ -4,6 +4,7 @@ set -e
 
 NODE=`which node`
 
+$NODE ./linux.js
 $NODE ./sync.js
 
 test $1 && [ 1 = $1 ] && cd articles && vuepress build && cd -
