@@ -26,3 +26,4 @@
 - [23-变量赋值](/linux/linux实战技能/23-变量赋值.html)
 - [24-数组](/linux/linux实战技能/24-数组.html)
 - [25-转义和引用](/linux/linux实战技能/25-转义和引用.html)
+- [26-运算符](/linux/linux实战技能/26-运算符.html)
