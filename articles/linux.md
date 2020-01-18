@@ -27,3 +27,5 @@
 - [24-数组](/linux/linux实战技能/24-数组.html)
 - [25-转义和引用](/linux/linux实战技能/25-转义和引用.html)
 - [26-运算符](/linux/linux实战技能/26-运算符.html)
+- [27-特殊字符大全](/linux/linux实战技能/27-特殊字符大全.html)
+- [28-测试和判断](/linux/linux实战技能/28-测试和判断.html)
