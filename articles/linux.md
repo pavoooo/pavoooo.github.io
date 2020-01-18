@@ -29,3 +29,8 @@
 - [26-运算符](/linux/linux实战技能/26-运算符.html)
 - [27-特殊字符大全](/linux/linux实战技能/27-特殊字符大全.html)
 - [28-测试和判断](/linux/linux实战技能/28-测试和判断.html)
+- [29-case分支](/linux/linux实战技能/29-case分支.html)
+- [30-循环](/linux/linux实战技能/30-循环.html)
+- [31-函数](/linux/linux实战技能/31-函数.html)
+- [32-脚本控制](/linux/linux实战技能/32-脚本控制.html)
+- [33-计划任务](/linux/linux实战技能/33-计划任务.html)
