@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>sed介绍 | 赛赛的空间</title>
+    <meta name="description" content="赵赛赛个人博客，关注前端技术，后端技术，喜欢编程。每天进步一点点就好啦！">
+    <link rel="icon" type="image/x-icon" href="/blog/favicon.ico">
+  <script type="text/javascript" src="/blog/bdtj.js"></script>
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.626dd732.css" as="style"><link rel="preload" href="/blog/assets/js/app.f288722b.js" as="script"><link rel="preload" href="/blog/assets/js/129.7f5a0c13.js" as="script"><link rel="prefetch" href="/blog/assets/js/73.234a7b10.js"><link rel="prefetch" href="/blog/assets/js/2.285762ea.js"><link rel="prefetch" href="/blog/assets/js/3.22b44da8.js"><link rel="prefetch" href="/blog/assets/js/4.6daa2d0b.js"><link rel="prefetch" href="/blog/assets/js/5.f169fbdc.js"><link rel="prefetch" href="/blog/assets/js/6.8e18dc59.js"><link rel="prefetch" href="/blog/assets/js/7.90d2c0ad.js"><link rel="prefetch" href="/blog/assets/js/8.c79e2e52.js"><link rel="prefetch" href="/blog/assets/js/9.cbe6d4cd.js"><link rel="prefetch" href="/blog/assets/js/10.a3f3e621.js"><link rel="prefetch" href="/blog/assets/js/11.a936e569.js"><link rel="prefetch" href="/blog/assets/js/12.24ea46c0.js"><link rel="prefetch" href="/blog/assets/js/13.ca6cc387.js"><link rel="prefetch" href="/blog/assets/js/14.84cb7623.js"><link rel="prefetch" href="/blog/assets/js/15.17309f98.js"><link rel="prefetch" href="/blog/assets/js/16.85d38bed.js"><link rel="prefetch" href="/blog/assets/js/17.c941d12d.js"><link rel="prefetch" href="/blog/assets/js/18.c1519b3a.js"><link rel="prefetch" href="/blog/assets/js/19.cde47560.js"><link rel="prefetch" href="/blog/assets/js/20.f2b3d7a0.js"><link rel="prefetch" href="/blog/assets/js/21.5632325c.js"><link rel="prefetch" href="/blog/assets/js/22.41f8f69f.js"><link rel="prefetch" href="/blog/assets/js/23.0cbb2dd3.js"><link rel="prefetch" href="/blog/assets/js/24.20915592.js"><link rel="prefetch" href="/blog/assets/js/25.3f717d25.js"><link rel="prefetch" href="/blog/assets/js/26.da439741.js"><link rel="prefetch" href="/blog/assets/js/27.ed820e7d.js"><link rel="prefetch" href="/blog/assets/js/28.4678c51e.js"><link rel="prefetch" href="/blog/assets/js/29.ac6d4ab9.js"><link rel="prefetch" href="/blog/assets/js/30.2b4d49d8.js"><link rel="prefetch" href="/blog/assets/js/31.844ba214.js"><link rel="prefetch" href="/blog/assets/js/32.76f67711.js"><link rel="prefetch" href="/blog/assets/js/33.759543b5.js"><link rel="prefetch" href="/blog/assets/js/34.565e062e.js"><link rel="prefetch" href="/blog/assets/js/35.9d0af171.js"><link rel="prefetch" href="/blog/assets/js/36.974734cb.js"><link rel="prefetch" href="/blog/assets/js/37.30fe7806.js"><link rel="prefetch" href="/blog/assets/js/38.f02db851.js"><link rel="prefetch" href="/blog/assets/js/39.e853f26a.js"><link rel="prefetch" href="/blog/assets/js/40.9fbc2d44.js"><link rel="prefetch" href="/blog/assets/js/41.f6a12994.js"><link rel="prefetch" href="/blog/assets/js/42.26bc959b.js"><link rel="prefetch" href="/blog/assets/js/43.f3269fdd.js"><link rel="prefetch" href="/blog/assets/js/44.cb5de5e9.js"><link rel="prefetch" href="/blog/assets/js/45.5d5f42a6.js"><link rel="prefetch" href="/blog/assets/js/46.c2493d97.js"><link rel="prefetch" href="/blog/assets/js/47.7242dd59.js"><link rel="prefetch" href="/blog/assets/js/48.aaecd468.js"><link rel="prefetch" href="/blog/assets/js/49.22c66b0e.js"><link rel="prefetch" href="/blog/assets/js/50.9e3ec93c.js"><link rel="prefetch" href="/blog/assets/js/51.c25f9742.js"><link rel="prefetch" href="/blog/assets/js/52.e0d5cbe8.js"><link rel="prefetch" href="/blog/assets/js/53.63a23ea8.js"><link rel="prefetch" href="/blog/assets/js/54.c39a2aa4.js"><link rel="prefetch" href="/blog/assets/js/55.ef731206.js"><link rel="prefetch" href="/blog/assets/js/56.8fe7b6c7.js"><link rel="prefetch" href="/blog/assets/js/57.f50acfdb.js"><link rel="prefetch" href="/blog/assets/js/58.fe9dd579.js"><link rel="prefetch" href="/blog/assets/js/59.b3f11627.js"><link rel="prefetch" href="/blog/assets/js/60.8718f455.js"><link rel="prefetch" href="/blog/assets/js/61.020b35e9.js"><link rel="prefetch" href="/blog/assets/js/62.7f38593d.js"><link rel="prefetch" href="/blog/assets/js/63.e74a255a.js"><link rel="prefetch" href="/blog/assets/js/64.abe7d542.js"><link rel="prefetch" href="/blog/assets/js/65.5d9a7a81.js"><link rel="prefetch" href="/blog/assets/js/66.f074be34.js"><link rel="prefetch" href="/blog/assets/js/67.752c5d11.js"><link rel="prefetch" href="/blog/assets/js/68.f8f34a14.js"><link rel="prefetch" href="/blog/assets/js/69.72ae7457.js"><link rel="prefetch" href="/blog/assets/js/70.ccf4ffdd.js"><link rel="prefetch" href="/blog/assets/js/71.6ec7b247.js"><link rel="prefetch" href="/blog/assets/js/72.b459a479.js"><link rel="prefetch" href="/blog/assets/js/74.6e9edc69.js"><link rel="prefetch" href="/blog/assets/js/75.2c0362b3.js"><link rel="prefetch" href="/blog/assets/js/76.0647bfe6.js"><link rel="prefetch" href="/blog/assets/js/77.39846746.js"><link rel="prefetch" href="/blog/assets/js/78.19c1f40e.js"><link rel="prefetch" href="/blog/assets/js/79.c3590cf2.js"><link rel="prefetch" href="/blog/assets/js/80.e356143d.js"><link rel="prefetch" href="/blog/assets/js/81.660612d6.js"><link rel="prefetch" href="/blog/assets/js/82.21ac53a2.js"><link rel="prefetch" href="/blog/assets/js/83.2a927016.js"><link rel="prefetch" href="/blog/assets/js/84.c2825fd9.js"><link rel="prefetch" href="/blog/assets/js/85.b7a684da.js"><link rel="prefetch" href="/blog/assets/js/86.2723b44d.js"><link rel="prefetch" href="/blog/assets/js/87.304cdab7.js"><link rel="prefetch" href="/blog/assets/js/88.fa3e74a2.js"><link rel="prefetch" href="/blog/assets/js/89.08464483.js"><link rel="prefetch" href="/blog/assets/js/90.53fd5c96.js"><link rel="prefetch" href="/blog/assets/js/91.ee9aeadb.js"><link rel="prefetch" href="/blog/assets/js/92.d9b377d4.js"><link rel="prefetch" href="/blog/assets/js/93.bd3e1e12.js"><link rel="prefetch" href="/blog/assets/js/94.f165f19f.js"><link rel="prefetch" href="/blog/assets/js/95.e5f092c4.js"><link rel="prefetch" href="/blog/assets/js/96.917f1f9e.js"><link rel="prefetch" href="/blog/assets/js/97.bd062729.js"><link rel="prefetch" href="/blog/assets/js/98.5919e2d0.js"><link rel="prefetch" href="/blog/assets/js/99.3735784a.js"><link rel="prefetch" href="/blog/assets/js/100.287744b3.js"><link rel="prefetch" href="/blog/assets/js/101.11f89116.js"><link rel="prefetch" href="/blog/assets/js/102.a501d72f.js"><link rel="prefetch" href="/blog/assets/js/103.36cbb2c2.js"><link rel="prefetch" href="/blog/assets/js/104.3b4010e4.js"><link rel="prefetch" href="/blog/assets/js/105.4d622b90.js"><link rel="prefetch" href="/blog/assets/js/106.5ba0a990.js"><link rel="prefetch" href="/blog/assets/js/107.c9193b14.js"><link rel="prefetch" href="/blog/assets/js/108.c32f48cc.js"><link rel="prefetch" href="/blog/assets/js/109.d85f02f3.js"><link rel="prefetch" href="/blog/assets/js/110.54132309.js"><link rel="prefetch" href="/blog/assets/js/111.6f2c8fe2.js"><link rel="prefetch" href="/blog/assets/js/112.4362108b.js"><link rel="prefetch" href="/blog/assets/js/113.b40ee8af.js"><link rel="prefetch" href="/blog/assets/js/114.3271d496.js"><link rel="prefetch" href="/blog/assets/js/115.d0bc0abe.js"><link rel="prefetch" href="/blog/assets/js/116.2cd1a80f.js"><link rel="prefetch" href="/blog/assets/js/117.631dc307.js"><link rel="prefetch" href="/blog/assets/js/118.deab4e2b.js"><link rel="prefetch" href="/blog/assets/js/119.1defc905.js"><link rel="prefetch" href="/blog/assets/js/120.0805f4cf.js"><link rel="prefetch" href="/blog/assets/js/121.8d7b11b8.js"><link rel="prefetch" href="/blog/assets/js/122.5c025dfd.js"><link rel="prefetch" href="/blog/assets/js/123.26fec01b.js"><link rel="prefetch" href="/blog/assets/js/124.291b5d15.js"><link rel="prefetch" href="/blog/assets/js/125.e85c2e86.js"><link rel="prefetch" href="/blog/assets/js/126.05dbd638.js"><link rel="prefetch" href="/blog/assets/js/127.9b043b0e.js"><link rel="prefetch" href="/blog/assets/js/128.f2362bfd.js"><link rel="prefetch" href="/blog/assets/js/130.13b7a74e.js"><link rel="prefetch" href="/blog/assets/js/131.9240578f.js"><link rel="prefetch" href="/blog/assets/js/132.bb50bcdb.js"><link rel="prefetch" href="/blog/assets/js/133.8b5630d0.js"><link rel="prefetch" href="/blog/assets/js/134.23146812.js"><link rel="prefetch" href="/blog/assets/js/135.9f0865e6.js"><link rel="prefetch" href="/blog/assets/js/136.27b6eb8a.js"><link rel="prefetch" href="/blog/assets/js/137.a6a5225b.js"><link rel="prefetch" href="/blog/assets/js/138.f42f53c4.js"><link rel="prefetch" href="/blog/assets/js/139.3b56c385.js"><link rel="prefetch" href="/blog/assets/js/140.af51dac5.js"><link rel="prefetch" href="/blog/assets/js/141.5e125306.js"><link rel="prefetch" href="/blog/assets/js/142.9a15cc7f.js"><link rel="prefetch" href="/blog/assets/js/143.922ff37c.js"><link rel="prefetch" href="/blog/assets/js/144.bf02731e.js"><link rel="prefetch" href="/blog/assets/js/145.df5c80c2.js"><link rel="prefetch" href="/blog/assets/js/146.597d6126.js"><link rel="prefetch" href="/blog/assets/js/147.904400d3.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.626dd732.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link"><img src="/blog/logo.png" alt="赛赛的空间" class="logo"> <span class="site-name can-hide">赛赛的空间</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">我的文章</a></div><div class="nav-item"><a href="/blog/dive-into-code.html" class="nav-link">前端攻坚战</a></div><div class="nav-item"><a href="/blog/good-writings.html" class="nav-link">阅读的好文</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">记录</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/linux.html" class="nav-link">Linux</a></li><li class="dropdown-item"><!----> <a href="/blog/translate.html" class="nav-link">翻译</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/zhaosaisai" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">我的文章</a></div><div class="nav-item"><a href="/blog/dive-into-code.html" class="nav-link">前端攻坚战</a></div><div class="nav-item"><a href="/blog/good-writings.html" class="nav-link">阅读的好文</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">记录</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/linux.html" class="nav-link">Linux</a></li><li class="dropdown-item"><!----> <a href="/blog/translate.html" class="nav-link">翻译</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/zhaosaisai" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1>sed介绍</h1> <h2 id="sed的模式空间"><a href="#sed的模式空间" aria-hidden="true" class="header-anchor">#</a> sed的模式空间</h2> <p><code>sed</code>的基本工作方式如下：</p> <ul><li>将文件以行为单位读取到内存中（模式空间）</li> <li>使用<code>sed</code>的每个脚本对该行进行操作</li> <li>处理完成后输出该行</li></ul> <h2 id="替换命令"><a href="#替换命令" aria-hidden="true" class="header-anchor">#</a> 替换命令</h2> <p><code>sed</code>的替换命令是<code>s</code>。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">sed</span> <span class="token string">'s/旧的内容/新的内容'</span> 文件名称
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>上面的<code>旧的内容</code>和<code>新的内容</code>是可以使用元字符的，为了防止元字符被解释成通配符，建议使用<code>'</code>。</p></blockquote> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat afile</span>
+a a a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 's/a/aa/' afile</span>
+aa a a
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat afile</span>
+a a a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><code>sed</code>命令中内容的分隔符是可以改变的，比如我们使用<code>!</code>作为分隔符。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 's!/!abc!' afile</span>
+a a a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>如果需要进行多次替换操作，可以使用<code>-e</code>选项。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">sed</span> -e <span class="token string">'s/旧的内容/新的内容/'</span> -e <span class="token string">'s/旧的内容/新的内容/'</span> filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed -e 's/a/aa/' -e 's/aa/bb/' afile</span>
+bb a a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>除了使用<code>-e</code>选项来指定多个命令，也可以不使用<code>-e</code>，使用<code>;</code>来分隔多个命令。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 's/a/aa/;s/aa/bb/' afile</span>
+bb a a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>如果需要将替换后的内容原样的写入到源文件中，需要使用<code>-i</code>选项</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">sed</span> -i <span class="token string">'s/旧的内容/新的内容/'</span> -e <span class="token string">'s/旧的内容/新的内容/'</span> filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed -i 's/a/aa/;s/aa/bb/' afile</span>
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat afile</span>
+bb a a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>替换内容的时候也是可以使用<code>-r</code>选项的，使用正则表达式来匹配旧的内容。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">sed</span> -r <span class="token string">'s/扩展正则表达式/new/'</span> filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat passwd</span>
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 's/...//' passwd</span>
+t:x:0:0:root:/root:/bin/bash
+:x:1:1:bin:/bin:/sbin/nologin
+mon:x:2:2:daemon:/sbin:/sbin/nologin
+:x:3:4:adm:/var/adm:/sbin/nologin
+x:4:7:lp:/var/spool/lpd:/sbin/nologin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 's/s*bin//' passwd</span>
+root:x:0:0:root:/root://bash
+:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/:/sbin/nologin
+adm:x:3:4:adm:/var/adm://nologin
+lp:x:4:7:lp:/var/spool/lpd://nologin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># grep root passwd</span>
+root:x:0:0:root:/root:/bin/bash
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># grep root passwd | sed 's/^root//'</span>
+:x:0:0:root:/root:/bin/bash
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>不加<code>-r</code>选项我们也是可以直接使用正则表达式的普通元字符的，如果你想使用正则表达式的扩展元字符，需要使用<code>-r</code>选项</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat bfile</span>
+b
+a
+aa
+aaa
+ab
+abb
+abbb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 's/ab*/!/' bfile</span>
+b
+<span class="token operator">!</span>
+<span class="token operator">!</span>a
+<span class="token operator">!</span>aa
+<span class="token operator">!</span>
+<span class="token operator">!</span>
+<span class="token operator">!</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 's/ab+/!/' bfile</span>
+b
+a
+aa
+aaa
+ab
+abb
+abbb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed -r 's/ab+/!/' bfile</span>
+b
+a
+aa
+aaa
+<span class="token operator">!</span>
+<span class="token operator">!</span>
+<span class="token operator">!</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed -r 's/ab?/!/' bfile</span>
+b
+<span class="token operator">!</span>
+<span class="token operator">!</span>a
+<span class="token operator">!</span>aa
+<span class="token operator">!</span>
+<span class="token operator">!</span>b
+<span class="token operator">!</span>bb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed -r 's/a|b/!/' bfile</span>
+<span class="token operator">!</span>
+<span class="token operator">!</span>
+<span class="token operator">!</span>a
+<span class="token operator">!</span>aa
+<span class="token operator">!</span>b
+<span class="token operator">!</span>bb
+<span class="token operator">!</span>bbb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>在<code>sed</code>命令中可以使用<code>()</code>来引用分组</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat cfile</span>
+axyzb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed -r 's/(a.*b)/\1\1/' cfile</span>
+axyzbaxyzb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><blockquote><p><code>\1</code>获取第一个分组中的内容，<code>\2</code>获取第二个分组中的内容。以此类推...</p></blockquote> <h3 id="替换命令加强版"><a href="#替换命令加强版" aria-hidden="true" class="header-anchor">#</a> 替换命令加强版</h3> <h4 id="全局替换"><a href="#全局替换" aria-hidden="true" class="header-anchor">#</a> 全局替换</h4> <p><code>sed</code>的全局替换需要指定<code>g</code>标识用来表示全局替换，用于替换所有出现的次数。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">sed</span> <span class="token string">'s/旧的内容/新的内容/g'</span> filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># head -5 passwd | sed 's/root/!!!!/'</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># head -5 passwd | sed 's/root/!!!!/g'</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>:x:0:0:<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>:/<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>除了使用<code>g</code>来表示全局匹配，我们也可以明确的指定一个数字，用来表示匹配第几次出现的内容。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># head -5 passwd | sed 's/root/!!!!/2'</span>
+root:x:0:0:<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="标志位"><a href="#标志位" aria-hidden="true" class="header-anchor">#</a> 标志位</h4> <p>上面出现的<code>g</code>被称为标志位。<code>sed</code>命令可以使用标志位来加强替换命令。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">sed</span> <span class="token string">'s/旧的内容/新的内容/标志位'</span> filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><code>sed</code>中主要有如下几个标志位：</p> <ul><li><strong>数字</strong>：表示第几次出现才进行替换</li> <li><strong>g</strong>：表示每次出现都进行替换</li> <li><strong>p</strong>：打印模式空间的内容</li> <li><strong>w file</strong>：将模式空间的内容写入到文件中</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># head -5 passwd | sed 's/root/!!!!/p'</span>
+<span class="token comment"># 下面输出两行的原因是，`sed`匹配一次后的输出，p模式输出</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>:x:0:0:root:/root:/bin/bash
+<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># ll wfile</span>
+ls: 无法访问wfile: 没有那个文件或目录
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># head -5 passwd | sed 's/root/!!!!/w wfile'</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># ll wfile</span>
+-rw-r--r-- 1 root root 32 1月  19 23:36 wfile
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat wfile</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>:x:0:0:root:/root:/bin/bash
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h4 id="寻址"><a href="#寻址" aria-hidden="true" class="header-anchor">#</a> 寻址</h4> <p><code>sed</code>命令默认会对每一行的内容进行操作，当我们增加了寻址后，只会对匹配的行进行操作。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">sed</span> <span class="token string">'/正则表达式/s/旧的内容/新的内容/标志位'</span> filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>上面就会只有匹配了前面的正则表达式的<code>行</code>才会被<code>sed</code>处理</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">sed</span> <span class="token string">'行号/s/旧的内容/新的内容/标志位'</span> filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>也可以明确指定行号，表示对哪一行的内容进行替换，也可以最后一行的<code>$</code>符号。</p> <p><strong>我们可以使用多个寻址符号，也可以混用行号和正则表达式寻址。</strong></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># head -6 /etc/passwd | sed 's/adm/!/'</span>
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+<span class="token operator">!</span>:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># head -6 /etc/passwd | sed '1s/adm/!/'</span>
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>在第<code>1-3</code>行进行替换</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># head -6 /etc/passwd | sed '1,3s/adm/!/'</span>
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># head -6 /etc/passwd | sed '/root/s/adm/!/'</span>
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="分组"><a href="#分组" aria-hidden="true" class="header-anchor">#</a> 分组</h4> <p>上面的寻址可以匹配多条命令</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>/regular/<span class="token punctuation">{</span>s/old/new/<span class="token punctuation">;</span> s/old/new/<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="sed脚本文件"><a href="#sed脚本文件" aria-hidden="true" class="header-anchor">#</a> sed脚本文件</h4> <p>当我们的选项很长的时候，我们可以将选项保存为文件，然后使用<code>-f</code>选项来加载脚本文件。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">sed</span> -f sedscript filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat sedscript</span>
+s/root/<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>/
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># head -5 /etc/passwd | sed -f sedscript</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="sed的其它指令"><a href="#sed的其它指令" aria-hidden="true" class="header-anchor">#</a> sed的其它指令</h2> <p><code>sed</code>最常用的就是<code>s</code>即替换命令。除此之外，<code>sed</code>还支持其他的一些指令。</p> <h3 id="删除指令"><a href="#删除指令" aria-hidden="true" class="header-anchor">#</a> 删除指令</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>寻址<span class="token punctuation">]</span>d
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>寻址可以是行号、正则表达式等。<code>d</code>这个指令用于删除模式空间内容，改变脚本的控制流，读取新的输入行。也就是说<code>d</code>指令后面的其它指令是不会被执行的。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat bfile</span>
+b
+a
+aa
+aaa
+ab
+abb
+abbb
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed '/ab/d' bfile</span>
+b
+a
+aa
+aaa
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><blockquote><p><code>d</code>指令会将匹配到寻址的行从模式空间中删除</p></blockquote> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed '/ab/d;s/a/!/' bfile</span>
+b
+<span class="token operator">!</span>
+<span class="token operator">!</span>a
+<span class="token operator">!</span>aa
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="追加、插入、更改"><a href="#追加、插入、更改" aria-hidden="true" class="header-anchor">#</a> 追加、插入、更改</h3> <p>追加指令是<code>a</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed '/ab/a hello' bfile</span>
+b
+a
+aa
+aaa
+ab
+hello
+abb
+hello
+abbb
+hello
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><code>a</code>指令会在匹配到的行的下面插入指定内容。</p> <p>插入指令是<code>i</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed '/ab/i hello' bfile</span>
+b
+a
+aa
+aaa
+hello
+ab
+hello
+abb
+hello
+abbb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><code>i</code>指令会在匹配到的行的上面插入指定内容</p> <p>更改指令是<code>c</code>。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed '/ab/c hello' bfile</span>
+b
+a
+aa
+aaa
+hello
+hello
+hello
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><code>c</code>指令会在将匹配到的行替换成指定内容</p> <h3 id="打印"><a href="#打印" aria-hidden="true" class="header-anchor">#</a> 打印</h3> <p>打印行号我们可以使用<code>=</code>指令</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed '/ab/=' bfile</span>
+b
+a
+aa
+aaa
+5
+ab
+6
+abb
+7
+abbb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>打印命令是<code>p</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed '/ab/p' bfile</span>
+b
+a
+aa
+aaa
+ab
+ab
+abb
+abb
+abbb
+abbb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><code>p</code>指令会将匹配的行重新打印一遍，通常和<code>-n</code>选项一起使用</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed -n '/ab/p' bfile</span>
+ab
+abb
+abbb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="下一行"><a href="#下一行" aria-hidden="true" class="header-anchor">#</a> 下一行</h3> <p>下一行命令是<code>n</code>，这种情况适用于只想处理文件的奇数行或者只想处理文件的偶数行。</p> <h3 id="读文件和写文件"><a href="#读文件和写文件" aria-hidden="true" class="header-anchor">#</a> 读文件和写文件</h3> <p>读文件的命令是<code>r</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed '/ab/r afile' bfile</span>
+b
+a
+aa
+aaa
+ab
+bb a a
+abb
+bb a a
+abbb
+bb a a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><code>r</code>指令可以将指定文件中的内容插入到匹配到的行的下面</p> <p>写文件的命令是<code>w</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed '/ab/w dfile' bfile</span>
+b
+a
+aa
+aaa
+ab
+abb
+abbb
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat dfile</span>
+ab
+abb
+abbb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><code>w</code>指令可以将匹配到的行的内容写入到指定文件中</p> <h3 id="退出命令"><a href="#退出命令" aria-hidden="true" class="header-anchor">#</a> 退出命令</h3> <p>退出命令是<code>q</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed '/ab/q' bfile</span>
+b
+a
+aa
+aaa
+ab
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>遇到一个匹配的行就直接退出了</p> <h2 id="sed多行模式空间"><a href="#sed多行模式空间" aria-hidden="true" class="header-anchor">#</a> sed多行模式空间</h2> <p><code>sed</code>的多行模式处理命令是<code>N</code>, <code>D</code>, <code>P</code>。</p> <p>多行模式一般用于处理配置文件，配置文件一般为单行出现，也有使用<code>XML</code>或<code>JSON</code>格式的配置文件，为多行出现。</p> <ul><li><code>N</code>将下一行加入到模式空间中</li> <li><code>D</code>删除模式空间中的第一个字符到第一个换行符</li> <li><code>P</code>打印模式空间中的第一个字符到第一个换行符</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat a.txt</span>
+hel
+lo
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 'N' a.txt</span>
+hel
+lo
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 'N;s/hello/!!!/' a.txt</span>
+hel
+lo
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 'N;s/hel\nlo/!!!/' a.txt</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat b.txt</span>
+hell
+o <span class="token function">bash</span> hel
+lo <span class="token function">bash</span>
+<span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># sed 'N;s/\n//;s/hello bash/hello sed\n/;P;D' b.txt</span>
+hello <span class="token function">sed</span>
+ hello <span class="token function">sed</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="保持空间"><a href="#保持空间" aria-hidden="true" class="header-anchor">#</a> 保持空间</h2> <p><code>保持空间</code>也是多行的一种操作方式，将内容暂存在保持空间，便于做多行处理。</p> <p>文本文件 -&gt; 模式空间 -&gt; 保持空间</p> <ul><li><code>h</code>和<code>H</code>将模式空间内容存放到保持空间中
+<ul><li><code>h</code>使用覆盖模式放到保存空间中</li> <li><code>H</code>使用追加模式将内容放到保存空间中</li></ul></li> <li><code>g</code>和<code>G</code>将保持空间内容取出到模式空间
+<ul><li><code>g</code>使用覆盖模式放到模式空间中</li> <li><code>G</code>使用追加模式将内容放到模式空间中</li></ul></li> <li><code>x</code>将模式空间和保持空间的内容进行对调</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@instance-6w9riila ~<span class="token punctuation">]</span><span class="token comment"># cat -n /etc/passwd | head -6 | sed -n '1h;1!G;$!x;$p'</span>
+     6	sync:x:5:0:sync:/sbin:/bin/sync
+     5	lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+     4	adm:x:3:4:adm:/var/adm:/sbin/nologin
+     3	daemon:x:2:2:daemon:/sbin:/sbin/nologin
+     2	bin:x:1:1:bin:/bin:/sbin/nologin
+     1	root:x:0:0:root:/root:/bin/bash
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/blog/assets/js/129.7f5a0c13.js" defer></script><script src="/blog/assets/js/app.f288722b.js" defer></script>
+  </body>
+</html>
